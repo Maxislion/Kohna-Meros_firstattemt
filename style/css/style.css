@@ -116,6 +116,10 @@ header {
     margin-top: 35px;
 }
 
+.title-meros {
+    font-family: 'Dancing Script', cursive;
+}
+
 .modelviewer {
     width: 980px;
     height: 500px;
