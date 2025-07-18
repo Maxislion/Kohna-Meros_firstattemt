@@ -1,0 +1,238 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Скрываем значок мобильного телефона */
+#ar-prompt {
+    display: none;
+}
+
+/* Делаем 3D плеер на весь браузер */
+model-viewer {
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: white;
+    height: 100px;
+}
+
+.header-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-nav {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.left_side {
+    display: flex;
+    gap: 225px;
+}
+
+.logo img {
+    width: 70px;
+    height: 79px;
+}
+
+.btn-find {
+    padding: 12px 10px;
+    background-color: #02B000;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.left_nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.left_nav ul {
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.left_nav ul li {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+}
+
+.left_nav ul li a {
+    text-decoration: none;
+    color: #1772B9;
+}
+
+.samarkand-banner-bottom {
+    width: 100%;
+}
+
+.samarkand-banner-bottom img {
+    width: 100%;
+    /* height: auto; */
+    display: block;
+    height: 462px;
+    object-fit: cover;
+}
+
+.model-3d {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-kohna-meros {
+    font-size: 60px;
+    color: #1772B9;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    margin-top: 35px;
+}
+
+.modelviewer {
+    width: 980px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.info-model-paragraps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.model-info {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #1772B9;
+    margin-bottom: 20px;
+}
+
+.model-info-2 {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #1772B9;
+}
+
+.discovermore_btn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.more_btn {
+    font-family: "Inter", sans-serif;
+    background-color: #D9D9D991;
+    color: #1772B9;
+    font-weight: 600;
+    border: none;
+    border-radius: 24px;
+    padding: 20px 57.5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more_btn:hover {
+    background-color: #1772B9;
+    color: #fff;
+}
+
+.custom-line {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        #1772B9;
+    margin: 47px auto 100px auto;
+    border: none;
+}
+
+.text-unescro {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 20px;
+    color: #5D5D5D;
+    text-align: center;
+}
+
+.custom-line-2 {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        #1772B9;
+    border: none;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #F1F4F6;
+    padding: 20px 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    color: #1772B9;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.footer-left img {
+    width: 50px;
+    height: 58px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.footer-right span {
+    color: #1772B9;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.footer-right a img {
+    width: 38px;
+    height: 38px;
+}
