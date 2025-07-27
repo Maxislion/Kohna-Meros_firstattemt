@@ -128,10 +128,9 @@ header {
     display: none;
 }
 
-.modelviewer {
-    width: 350px !important;
+.modelviewer{
+    width: 400px !important;
     height: 780px !important;
-    margin-top: -30px;
 }
 
 .minaret-text-box {
