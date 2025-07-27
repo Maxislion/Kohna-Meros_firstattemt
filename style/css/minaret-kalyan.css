@@ -86,10 +86,10 @@ header {
 
 /* section-start */
 .minaret-section {
-    padding: 40px 20px;
     font-family: 'Dancing Script', cursive;
     color: #1772B9;
     background-color: #fff;
+    margin-bottom: 120px;
 }
 
 .minaret-title {
@@ -98,6 +98,7 @@ header {
     margin-bottom: 20px;
     position: relative;
     font-weight: 400;
+    margin-top: 15px;
 }
 
 .minaret-title::after {
@@ -129,7 +130,8 @@ header {
 
 .modelviewer {
     width: 350px !important;
-    height: 770px !important;
+    height: 780px !important;
+    margin-top: -30px;
 }
 
 .minaret-text-box {
