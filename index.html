@@ -52,16 +52,21 @@
     <section>
         <div class="model-3d">
             <h1 class="title-kohna-meros">Kohna <span class="title-meros">Meros</span></h1>
-            <model-viewer class="modelviewer" src="teapot.glb" ar ar-modes="webxr scene-viewer quick-look"
-                camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1"
-                camera-orbit="-365.9deg 84.87deg 0.06667m" field-of-view="30deg">
+            <model-viewer class="modelviewer" src="Miri_Arab_Mosque.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                tone-mapping="aces" poster="poster.webp" shadow-intensity="2"
+                environment-image="qwantani_dusk_2_puresky_4k.hdr" exposure="0.85"
+                skybox-image="qwantani_dusk_2_puresky_4k.hdr">
                 <div class="progress-bar hide" slot="progress-bar">
                     <div class="update-bar"></div>
                 </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
                 <div id="ar-prompt">
                     <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
                 </div>
             </model-viewer>
+
         </div>
 
         <div class="discovermore_btn">
@@ -75,8 +80,8 @@
 
     <footer class="footer">
         <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
-                to future generations. Our cultural and natural heritage are<br>both irreplaceable sources of life
-                and inspiration.” - UNESCO (World Heritage)</p>
+            to future generations. Our cultural and natural heritage are<br>both irreplaceable sources of life
+            and inspiration.” - UNESCO (World Heritage)</p>
 
         <div class="footer-bottom">
             <div class="footer-right">
