@@ -87,7 +87,6 @@ header {
 /* section-start */
 section {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) -30.01%, rgba(10, 102, 194, 0.15) 122.41%);
-    padding-bottom: 150px;
 }
 
 .who-we-are {
@@ -96,9 +95,9 @@ section {
     background: #fff;
     margin: 0px auto;
     text-align: center;
-    padding: 5px 110px 50px;
-    border-radius: 40px;
-    /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05); */
+    padding: 5px 110px 70px 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     font-family: 'Segoe UI', sans-serif;
     color: #2a2a2a;
 }
@@ -111,7 +110,7 @@ section {
 }
 
 .who-we-are p {
-    font-size: 20px;
+    font-size: 16px;
     color: #1772B9;
     margin: 25px 0;
     line-height: 1.6;
@@ -119,63 +118,72 @@ section {
 
 .who-we-are .team-image {
     width: 480px;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
+    margin-top: 15px;
 }
 
 .who-we-are .team-names {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 55px;
     flex-wrap: wrap;
-    margin-top: 30px;
     margin-bottom: 50px;
 }
 
 .who-we-are .team-names span {
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
     color: #1772B9;
     font-weight: 500;
 }   
 
+
 /* footer-start */
-footer {
+.footer {
     background-color: #F1F4F6;
-    padding: 20px 55px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
+    padding: 10px 15px 3px 15px;
 }
 
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 23px;
-    color: #1772B9;
-    font-weight: 500;
-    font-size: 15px;
+.footer-quote {
+    text-align: center;
+    color: #5D5D5D;
+    font-size: 16px;
+    font-family: 'Cutive Mono', monospace;
 }
 
-.footer-left img {
-    width: 50px;
-    height: 58px;
+.footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .footer-right {
     display: flex;
-    align-items: center;
-    gap: 26px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
 }
 
-.footer-right span {
+.footer-icons {
+    display: flex;
+    gap: 10px;
+    margin-right: 37px;
+
+}
+
+.footer-logo {
+    width: 33px;
+    height: 37px;
+}
+
+.footer-linkedin {
+    width: 37px;
+    height: 37px;
+}
+
+.footer-copy {
+    font-size: 11px;
     color: #1772B9;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.footer-right a img {
-    width: 38px;
-    height: 38px;
+    margin-right: 22px;
 }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minaret Kalyan</title>
+    <link rel="stylesheet" href="style/css/minaret-kalyan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="header-nav">
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="index.html"><img src="style/img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <div class="left_nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="minaret-kalyan.html">Architecture</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <hr class="custom-line">
+
+
+    <section class="minaret-section">
+        <h2 class="minaret-title">Minaret Kalyan</h2>
+
+        <div class="minaret-content">
+            <div class="minaret-model">
+                <model-viewer class="modelviewer" src="minaret-kalyan.glb" ar ar-modes="webxr scene-viewer quick-look"
+                    camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1"
+                    camera-orbit="-7.5deg 86.05deg 0.9855m" field-of-view="30deg">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <div id="ar-prompt">
+                        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                    </div>
+                </model-viewer>
+            </div>
+
+            <div class="minaret-text-box">
+                <h3 class="minaret-subtitle">Short Historical Overview</h3>
+                <p class="minaret-text">
+                    Built in 1127, Kalyan Minaret (Big Lighthouse) reflects the greatness of<br>12th century Oriental
+                    architecture.
+                    In times of peace, it was used to call<br>for five-time prayers, with the voice stretching
+                    throughout the whole city.<br>
+                    In times of war, it served as a tower to spot approaching enemies, so its<br>role was immense both
+                    in peaceful times and during wars.
+                </p>
+
+                <h3 class="minaret-subtitle">Structural Insights</h3>
+                <p class="minaret-text">
+                    The cylindrical tower stretches 47 feet up and 10 meters down at its<br>foundation. Tower is made of
+                    fired bricks with different ornamental strip<br>patterns — 14, to be more specific.
+                    Foundation was left to rest for two<br>years before beginning the construction of the building.
+                    Known
+                    for its earthquake resistance, Minaret endured not only shakes but also<br>bombardments from
+                    bolsheviks.
+                </p>
+
+                <h3 class="minaret-subtitle">Fun Fact</h3>
+                <p class="minaret-text-last">
+                    Legend says camel milk, bull’s blood, and eggs were mixed into the bricks<br>to strengthen the mortar
+                    at the foundation.
+                    Another myth claims that <br> when Genghis Khan approached Bukhara and saw the Kalyan Minaret, his<br>helmet
+                    fell off. To pick it up, he had to bow. He considered it as a sign to <br> not destroy the edifice.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="custom-line">
+
+
+    <footer class="footer">
+        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+            to future generations. Our cultural and natural heritage are<br>both irreplaceable sources of life
+            and inspiration.” - UNESCO (World Heritage)</p>
+
+        <div class="footer-bottom">
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
+                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                </div>
+                <div class="footer-copy">
+                    © 2025 <span>Kohna Meros</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
