@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miri-Arab Madrassa</title>
+    <link rel="stylesheet" href="style/css/miri-arab-madrassa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="header-nav">
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="index.html"><img src="style/img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <div class="left_nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="minaret-kalyan.html">Architecture</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <hr class="custom-line">
+
+
+    <section class="minaret-section">
+        <h2 class="minaret-title">Miri-Arab Madrassa</h2>
+
+        <div class="minaret-content">
+            <div class="minaret-model">
+                <model-viewer class="modelviewer" src="Miri_Arab_Mosque.glb" ar ar-modes="webxr scene-viewer quick-look"
+                    camera-controls tone-mapping="aces" poster="poster.webp" shadow-intensity="2"
+                    environment-image="qwantani_dusk_2_puresky_4k.hdr" exposure="0.85"
+                    skybox-image="qwantani_dusk_2_puresky_4k.hdr">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <div id="ar-prompt">
+                        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                    </div>
+                </model-viewer>
+
+            </div>
+
+            <div class="minaret-text-box">
+                <h3 class="minaret-subtitle">Short Historical Overview</h3>
+                <p class="minaret-text">
+                    Miri-Arab (the property of Arabs) was built in the 16th century, with the date of its construction
+                    still being debated topic among archeologists.<br>From the year of its foundation until the 1920 civil
+                    war invasion, the building was considered the largest educational and spiritual centre in<br>Central
+                    Asia, serving as Islamic school. Sheikh Abdullah Yamani, the constructor of the building, wished to
+                    be buried in the madrassa. 
+                </p>
+
+                <h3 class="minaret-subtitle">Structural Insights</h3>
+                <p class="minaret-text">
+                    The madrassa is mainly made of baked bricks and some timber elements in the doors and ceiling.
+                    Masonry walls are 1.5 metre thick, providing<br>solid lateral bearing capacity. When viewed from above,
+                    two big glazed sky-blue domes can be noticed from both sides of the entrance.<br>Gaining popularity in
+                    times of Timurids, Oriental glazed mosaic was used to decorate both courtyard and iwan (grand
+                    rectangular entrance<br>with an arch opening) facades. 
+                </p>
+
+                <h3 class="minaret-subtitle">Legends</h3>
+                <p class="minaret-text-last">
+                    The final construction of the madrasa was founded by Ubaydulla khan for the money that he received
+                    after trading 3000 Iranian prisoners.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="custom-line">
+
+
+    <footer class="footer">
+        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+            to future generations. Our cultural and natural heritage are<br>both irreplaceable sources of life
+            and inspiration.” - UNESCO (World Heritage)</p>
+
+        <div class="footer-bottom">
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
+                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                </div>
+                <div class="footer-copy">
+                    © 2025 <span>Kohna Meros</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

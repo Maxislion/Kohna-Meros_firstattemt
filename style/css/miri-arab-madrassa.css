@@ -115,13 +115,10 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    align-items: flex-start;
-}
-
-.minaret-model {
-    flex: 1 1 300px;
-    max-width: 400px;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-around;
 }
 
 #ar-prompt {
@@ -129,15 +126,13 @@ header {
 }
 
 .modelviewer{
-    width: 400px;
-    height: 780px;
+    width: 678px;
+    height: 400px;
 }
 
 .minaret-text-box {
-    flex: 1 1 600px;
-    max-width: 720px;
-    height: 780px;
-    padding: 40px 80px;
+    max-width: 1120px;
+    padding: 30px 22px;
     border-radius: 15px;
     border: 1px solid #eee;
     background-color: #fff;
@@ -155,7 +150,7 @@ header {
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #1772B9;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 }
 
 .minaret-text-last {
