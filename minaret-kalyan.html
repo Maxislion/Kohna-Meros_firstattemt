@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minaret Kalyan</title>
     <link rel="stylesheet" href="style/css/minaret-kalyan.css">
+    <link rel="stylesheet" href="style/css/base-responsive.css">
+    <link rel="stylesheet" href="style/css/minaret-kalyan-responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
@@ -22,7 +24,11 @@
                     </div>
                 </div>
 
-                <div class="left_nav">
+                <div class="burger" onclick="toggleMobileMenu()">
+                    &#9776;
+                </div>
+
+                <div class="left_nav" id="mainMenu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="minaret-kalyan.html">Architecture</a></li>
@@ -33,8 +39,18 @@
                     </ul>
                 </div>
             </nav>
+
+            <div class="mobile-nav" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="minaret-kalyan.html">Architecture</a>
+                <a href="about.html">About us</a>
+                <a href="#">Stories</a>
+                <a href="#">Contact</a>
+                <a href="#">English</a>
+            </div>
         </div>
     </header>
+
 
     <hr class="custom-line">
 
@@ -44,9 +60,9 @@
 
         <div class="minaret-content">
             <div class="minaret-model">
-                <model-viewer class="modelviewer" src="minaret-kalyan.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
-                    tone-mapping="aces" poster="poster.webp" shadow-intensity="2" environment-image="goegap_4k.hdr"
-                    exposure="1.3" shadow-softness="1" auto-rotate>
+                <model-viewer class="modelviewer" src="minaret-kalyan.glb" ar ar-modes="webxr scene-viewer quick-look"
+                    camera-controls tone-mapping="aces" poster="poster.webp" shadow-intensity="2"
+                    environment-image="goegap_4k.hdr" exposure="1.3" shadow-softness="1" auto-rotate>
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -60,32 +76,32 @@
             <div class="minaret-text-box">
                 <h3 class="minaret-subtitle">Short Historical Overview</h3>
                 <p class="minaret-text">
-                    Built in 1127, Kalyan Minaret (Big Lighthouse) reflects the greatness of<br>12th century Oriental
+                    Built in 1127, Kalyan Minaret (Big Lighthouse) reflects the greatness of 12th century Oriental
                     architecture.
-                    In times of peace, it was used to call<br>for five-time prayers, with the voice stretching
-                    throughout the whole city.<br>
-                    In times of war, it served as a tower to spot approaching enemies, so its<br>role was immense both
+                    In times of peace, it was used to call for five-time prayers, with the voice stretching
+                    throughout the whole city.
+                    In times of war, it served as a tower to spot approaching enemies, so its role was immense both
                     in peaceful times and during wars.
                 </p>
 
                 <h3 class="minaret-subtitle">Structural Insights</h3>
                 <p class="minaret-text">
-                    The cylindrical tower stretches 47 feet up and 10 meters down at its<br>foundation. Tower is made of
-                    fired bricks with different ornamental strip<br>patterns — 14, to be more specific.
-                    Foundation was left to rest for two<br>years before beginning the construction of the building.
+                    The cylindrical tower stretches 47 feet up and 10 meters down at its foundation. Tower is made of
+                    fired bricks with different ornamental strip patterns — 14, to be more specific.
+                    Foundation was left to rest for two years before beginning the construction of the building.
                     Known
-                    for its earthquake resistance, Minaret endured not only shakes but also<br>bombardments from
+                    for its earthquake resistance, Minaret endured not only shakes but also bombardments from
                     bolsheviks.
                 </p>
 
                 <h3 class="minaret-subtitle">Fun Fact</h3>
                 <p class="minaret-text-last">
-                    Legend says camel milk, bull’s blood, and eggs were mixed into the bricks<br>to strengthen the
+                    Legend says camel milk, bull’s blood, and eggs were mixed into the bricks to strengthen the
                     mortar
                     at the foundation.
-                    Another myth claims that <br> when Genghis Khan approached Bukhara and saw the Kalyan Minaret,
-                    his<br>helmet
-                    fell off. To pick it up, he had to bow. He considered it as a sign to <br> not destroy the edifice.
+                    Another myth claims that when Genghis Khan approached Bukhara and saw the Kalyan Minaret,
+                    his helmet
+                    fell off. To pick it up, he had to bow. He considered it as a sign to not destroy the edifice.
                 </p>
             </div>
         </div>
@@ -96,7 +112,7 @@
 
     <footer class="footer">
         <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
-            to future generations. Our cultural and natural heritage are<br>both irreplaceable sources of life
+            to future generations. Our cultural and natural heritage are both irreplaceable sources of life
             and inspiration.” - UNESCO (World Heritage)</p>
 
         <div class="footer-bottom">
@@ -112,6 +128,12 @@
         </div>
     </footer>
 
-</body>
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
 
+</body>
 </html>
