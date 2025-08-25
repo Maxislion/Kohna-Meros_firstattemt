@@ -1,0 +1,112 @@
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+
+    .left_nav ul li {
+        font-size: 13px !important;
+    }
+
+    .who-we-are {
+        max-width: 660px;
+        padding: 10px 75px 40px 75px;
+    }
+
+    .who-we-are h2 {
+        font-size: 45px;
+    }
+
+    .who-we-are .team-image {
+        width: 400px;
+    }
+
+    .who-we-are .team-names {
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .custom-line {
+        height: 1.5px;
+    }
+
+    .who-we-are p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .left_nav ul li {
+        font-size: 10px !important;
+    }
+
+    .who-we-are {
+        max-width: 500px;
+        padding: 10px 40px 40px 40px;
+    }
+
+    .who-we-are h2 {
+        font-size: 40px;
+    }
+
+    .who-we-are .team-image {
+        width: 370px;
+        height: 150px;
+    }
+
+    .who-we-are .team-names {
+        gap: 20px;
+    }
+
+    .who-we-are .team-names span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .who-we-are {
+        max-width: 430px;
+        padding: 10px 0px 25px 0px;
+    }
+
+    .who-we-are .team-image {
+        width: 330px;
+    }
+
+    .who-we-are .team-names span {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .who-we-are {
+        max-width: 300px;
+        padding: 10px 2px 25px 2px;
+    }
+
+    .who-we-are h2 {
+        font-size: 35px;
+    }
+
+    .who-we-are p {
+        font-size: 12px;
+        margin: 15px 0;
+    }
+
+    .who-we-are .team-image {
+        width: 240px;
+        margin-top: 0;
+    }
+
+    .who-we-are .team-names {
+        gap: 10px;
+    }
+
+    .who-we-are .team-names span {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 320px) {}

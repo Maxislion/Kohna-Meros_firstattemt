@@ -46,6 +46,10 @@
 
 @media (max-width: 768px) {
 
+    .left_nav {
+        left: 43% !important;
+    }
+
     .title-kohna-meros {
         font-size: 40px;
     }
