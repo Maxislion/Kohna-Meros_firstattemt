@@ -1,15 +1,126 @@
 @media (max-width: 1200px) {
-    
+    .minaret-title {
+        font-size: 50px;
+    }
+
+    .minaret-text-box {
+        max-width: 850px;
+        padding: 30px 30px;
+    }
 }
+
 @media (max-width: 992px) {
-    
+
+    .minaret-section {
+        margin-bottom: 100px;
+    }
+
+    .modelviewer {
+        width: 700px;
+    }
+
+    .minaret-text-box {
+        max-width: 700px;
+        padding: 30px 30px;
+    }
+
+    .minaret-text,
+    .minaret-text-last {
+        font-size: 15px;
+    }
+
 }
+
 @media (max-width: 768px) {
-    
+
+    .minaret-title {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .minaret-title::after {
+        width: 500px;
+        margin: 10px auto 0;
+    }
+
+    .modelviewer {
+        width: 450px;
+        height: 250px;
+    }
+
+    .minaret-text-box {
+        max-width: 450px;
+        padding: 20px 20px;
+    }
+
+    .minaret-text,
+    .minaret-text-last {
+        font-size: 13px;
+    }
+
 }
+
+@media (max-width: 530px) {
+
+    .minaret-section {
+        margin-bottom: 50px;
+    }
+
+    .minaret-title {
+        font-size: 35px;
+    }
+
+    .minaret-title::after {
+        width: 400px;
+    }
+
+    .modelviewer {
+        width: 350px;
+        height: 200px;
+    }
+
+    .minaret-text-box {
+        max-width: 350px;
+        padding: 20px 15px;
+    }
+
+    .minaret-subtitle {
+        font-size: 32px;
+    }
+
+    .minaret-text,
+    .minaret-text-last {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 480px) {
-    
+
+    .minaret-section {
+        margin-bottom: 40px;
+    }
+
+    .minaret-title {
+        font-size: 30px;
+    }
+
+    .minaret-title::after {
+        width: 300px;
+    }
+
+    .modelviewer {
+        width: 300px;
+        height: 180px;
+    }
+
+    .minaret-text-box {
+        max-width: 300px;
+        padding: 20px 10px;
+    }
+
+    .minaret-subtitle {
+        font-size: 29px;
+    }
 }
-@media (max-width: 320px) {
-    
-}
+
+@media (max-width: 320px) {}

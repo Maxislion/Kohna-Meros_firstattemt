@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    min-width: 320px;
+    min-width: 375px;
 }
 
 * {
@@ -136,7 +136,7 @@ header {
     width: 740px;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
         #1772B9;
-    margin: 25px auto 0;
+    margin: 15px auto 0;
 }
 
 .minaret-content {
@@ -160,7 +160,7 @@ header {
 
 .minaret-text-box {
     max-width: 1120px;
-    padding: 30px 22px;
+    padding: 30px 52px;
     border-radius: 15px;
     border: 1px solid #eee;
     background-color: #fff;
