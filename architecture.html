@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture</title>
+    <link rel="icon" href="style/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style/css/architecture.css">
+    <link rel="stylesheet" href="style/css/base-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <nav class="header-nav">
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="index.html"><img src="style/img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <div class="burger" onclick="toggleMobileMenu()">
+                    &#9776;
+                </div>
+
+                <div class="left_nav" id="mainMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="minaret-kalyan.html">Architecture</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobile-nav" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="minaret-kalyan.html">Architecture</a>
+                <a href="about.html">About us</a>
+                <a href="#">Stories</a>
+                <a href="#">Contact</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="maps-section">
+            <h2 class="maps-title">Бухара на карте</h2>
+            <div class="maps-container">
+                <!-- Google Maps -->
+                <div class="map-box">
+                    <h3>Google Maps</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43858.86717128785!2d64.43181353361975!3d39.7688201569643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50060e65993cd5%3A0xc87beaf40e48e767!2z0JHRg9GF0LDRgNCwLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e1!3m2!1sru!2s!4v1757078991277!5m2!1sru!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Yandex Maps -->
+                <div class="map-box">
+                    <h3>Yandex Maps</h3>
+                    <iframe src="https://yandex.uz/map-widget/v1/?ll=64.427720%2C39.774703&z=12&mode=search&text=Бухара"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="links-section">
+            <h2 class="links-title">Explore More</h2>
+            <div class="links-grid">
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+                <a href="#">Ссылка 4</a>
+                <a href="#">Ссылка 5</a>
+                <a href="#">Ссылка 6</a>
+                <a href="#">Ссылка 7</a>
+                <a href="#">Ссылка 8</a>
+                <a href="#">Ссылка 9</a>
+                <a href="#">Ссылка 10</a>
+                <a href="#">Ссылка 11</a>
+                <a href="#">Ссылка 12</a>
+            </div>
+        </section>
+    </main>
+
+    <hr class="custom-line">
+
+    <footer class="footer">
+        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+            to future generations. Our cultural and natural heritage are both irreplaceable sources of life
+            and inspiration.” - UNESCO (World Heritage)</p>
+
+        <div class="footer-bottom">
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
+                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                </div>
+                <div class="footer-copy">
+                    © 2025 <span>Kohna Meros</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>

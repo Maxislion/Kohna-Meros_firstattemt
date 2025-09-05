@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chor Minor</title>
+    <link rel="icon" href="style/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style/css/miri-arab-madrassa.css">
+    <link rel="stylesheet" href="style/css/base-responsive.css">
+    <link rel="stylesheet" href="style/css/mini-arab-madrassa-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="header-nav">
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="index.html"><img src="style/img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <div class="burger" onclick="toggleMobileMenu()">
+                    &#9776;
+                </div>
+
+                <div class="left_nav" id="mainMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="minaret-kalyan.html">Architecture</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobile-nav" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="minaret-kalyan.html">Architecture</a>
+                <a href="about.html">About us</a>
+                <a href="#">Stories</a>
+                <a href="#">Contact</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </header>
+
+
+    <hr class="custom-line">
+
+
+    <section class="minaret-section">
+        <h2 class="minaret-title">Chor Minor</h2>
+
+        <div class="minaret-content">
+            <div class="minaret-model">
+                <model-viewer class="modelviewer" src="style/models/Chor Minor.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
+                    poster="style/models/poster/Chor-Minor.webp" shadow-intensity="0"
+                    environment-image="style/models/cada.hdr" exposure="2" shadow-softness="1">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <div id="ar-prompt">
+                        <img src="ar_hand_prompt.png">
+                    </div>
+                </model-viewer>
+
+            </div>
+
+            <div class="minaret-text-box">
+                <h3 class="minaret-subtitle">Short Historical Overview</h3>
+                <p class="minaret-text">
+                    Built in 1807 by Khalif Niyazkul, a wealthy Turkmen merchant, Chor Minor (“Four Minarets”) is one of
+                    Bukhara’s most whimsical landmarks. Unlike traditional madrasas, it served as a gatehouse to a
+                    now-vanished complex. Its unique design blends Central Asian, Persian, and Indian influences,
+                    possibly inspired by Niyazkul’s travels. Though small, it became a symbol of Bukhara’s eclectic
+                    architectural spirit. The structure survived Soviet-era neglect and was restored in the 1990s.
+                    Today, it stands as a charming oddity, capturing the imagination of visitors with its fairytale-like
+                    appearance and mysterious origins.
+                </p>
+
+                <h3 class="minaret-subtitle">Structural Insights</h3>
+                <p class="minaret-text">
+                    Chor Minor’s four turquoise-domed towers (only two are true minarets) rise from a square base, each
+                    decorated with unique tile patterns symbolizing different religions or philosophies. The central
+                    dome covers a small prayer room. The towers’ hollow interiors have narrow staircases, but only one
+                    leads to a viewpoint. The brickwork is adorned with geometric and floral motifs, while the colored
+                    tiles reflect 19th-century Bukharan craftsmanship. Despite its ornamental appearance, the structure
+                    is sturdy, with thick walls and balanced proportions. Its unconventional design makes it a
+                    fascinating departure from traditional Islamic architecture.
+                </p>
+
+                <h3 class="minaret-subtitle">Fun Fact</h3>
+                <p class="minaret-text-last">
+                    The legend says that each minaret was dedicated to one of the merchant’s daughters. Thus, the
+                    decoration of each tower differs, representing four daughters’ personalities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="custom-line">
+
+
+    <footer class="footer">
+        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+            to future generations. Our cultural and natural heritage are both irreplaceable sources of life
+            and inspiration.” - UNESCO (World Heritage)</p>
+
+        <div class="footer-bottom">
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
+                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                </div>
+                <div class="footer-copy">
+                    © 2025 <span>Kohna Meros</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

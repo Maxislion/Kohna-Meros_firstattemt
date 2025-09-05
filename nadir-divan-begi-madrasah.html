@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadir Divan Begi Madrasah</title>
+    <link rel="icon" href="style/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style/css/miri-arab-madrassa.css">
+    <link rel="stylesheet" href="style/css/base-responsive.css">
+    <link rel="stylesheet" href="style/css/mini-arab-madrassa-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="header-nav">
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="index.html"><img src="style/img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <div class="burger" onclick="toggleMobileMenu()">
+                    &#9776;
+                </div>
+
+                <div class="left_nav" id="mainMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="minaret-kalyan.html">Architecture</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobile-nav" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="minaret-kalyan.html">Architecture</a>
+                <a href="about.html">About us</a>
+                <a href="#">Stories</a>
+                <a href="#">Contact</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </header>
+
+
+    <hr class="custom-line">
+
+
+    <section class="minaret-section">
+        <h2 class="minaret-title">Nadir Divan Begi Madrasah</h2>
+
+        <div class="minaret-content">
+            <div class="minaret-model">
+                <model-viewer class="modelviewer" src="style/models/Nadir Divan Begi.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
+                    poster="style/models/poster/Nadir-Divan-Begi.webp" shadow-intensity="0" exposure="2"
+                    shadow-softness="1" environment-image="style/models/fada.hdr"
+                    camera-orbit="1.579deg 88.42deg 3.528m" field-of-view="22.98deg">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <div id="ar-prompt">
+                        <img src="ar_hand_prompt.png">
+                    </div>
+                </model-viewer>
+
+            </div>
+
+            <div class="minaret-text-box">
+                <h3 class="minaret-subtitle">Short Historical Overview</h3>
+                <p class="minaret-text">
+                    Commissioned in the 1920s by Nadir Divan-Begi, prime minister of Bukhara of that time, Nadir
+                    Divan-Begi madrasah was originally constructed as a caravanserai — an edifice for travelers and
+                    merchants to rest. Later, being worshiped for its marvelous appearance, the buildings were slightly
+                    altered to serve educational purposes. Today, the building is not just a madrasah that used to
+                    satisfy the needs of people of the past but a relic and a representation of ambitions of 17th
+                    century Bukhara.
+                </p>
+
+                <h3 class="minaret-subtitle">Structural Insights</h3>
+                <p class="minaret-text">
+                    Though made of baked bricks as it is common for medieval oriental buildings in the region, the
+                    madrasah is more improvised than other edifices of that time. To be more specific, the courtyard
+                    seems to be wider and welcoming and student private cells welcoming compared to other madrasas — the
+                    result of a shift in purpose of the building. Another astonishing feature of the Nadir Divan-Begi
+                    madrasah is the entrance’s arch that is ornamented by an image of a line chasing a deer, quite an
+                    unusual art form for an Islamic edifice.
+                </p>
+
+                <h3 class="minaret-subtitle">Fun Fact</h3>
+                <p class="minaret-text-last">
+                    “This is a marvelous madrasah” claimed Quli Khan after seeing the grand entrance to the building.
+                    Scared of upsetting the ruler, Nadir Divan-Begi repurposed the building in one single night, adding
+                    prayers and slightly changing the layout.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="custom-line">
+
+
+    <footer class="footer">
+        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+            to future generations. Our cultural and natural heritage are both irreplaceable sources of life
+            and inspiration.” - UNESCO (World Heritage)</p>
+
+        <div class="footer-bottom">
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
+                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                </div>
+                <div class="footer-copy">
+                    © 2025 <span>Kohna Meros</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

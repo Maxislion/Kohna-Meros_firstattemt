@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A’lam Madrasa</title>
+    <link rel="icon" href="style/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style/css/miri-arab-madrassa.css">
+    <link rel="stylesheet" href="style/css/base-responsive.css">
+    <link rel="stylesheet" href="style/css/mini-arab-madrassa-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="header-nav">
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="index.html"><img src="style/img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <div class="burger" onclick="toggleMobileMenu()">
+                    &#9776;
+                </div>
+
+                <div class="left_nav" id="mainMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="minaret-kalyan.html">Architecture</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobile-nav" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="minaret-kalyan.html">Architecture</a>
+                <a href="about.html">About us</a>
+                <a href="#">Stories</a>
+                <a href="#">Contact</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </header>
+
+
+    <hr class="custom-line">
+
+
+    <section class="minaret-section">
+        <h2 class="minaret-title">A’lam Madrasa</h2>
+
+        <div class="minaret-content">
+            <div class="minaret-model">
+                <model-viewer class="modelviewer" src="style/models/Alam.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                    tone-mapping="neutral" poster="style/models/poster/Alam.webp" shadow-intensity="0" environment-image="style/models/poolbeg_4k.hdr"
+                    exposure="2" camera-orbit="-0.3947deg 86.45deg 3.189m" field-of-view="22.98deg">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <div id="ar-prompt">
+                        <img src="ar_hand_prompt.png">
+                    </div>
+                </model-viewer>
+
+            </div>
+
+            <div class="minaret-text-box">
+                <h3 class="minaret-subtitle">Short Historical Overview</h3>
+                <p class="minaret-text">
+                     Constructed in 1825 by the Emir of Bukhara, Nasrullah Khan, the A’lam Madrasa was a center of
+                    Islamic scholarship. Named after a revered scholar, it attracted students from across Central Asia.
+                    Unlike older madrasas, it reflects late-period Bukharan architecture, with less grandeur but refined
+                    craftsmanship. It functioned as a religious school until the Soviet era, when it was repurposed for
+                    secular use. Post-independence, it was restored as a cultural site. Though smaller than the famed
+                    Kukeldash Madrasa, its historical role in education and theology makes it an important piece of
+                    Bukhara’s intellectual heritage.
+                </p>
+
+                <h3 class="minaret-subtitle">Structural Insights</h3>
+                <p class="minaret-text">
+                    The madrasa follows a traditional courtyard layout, with student cells (hujras) lining the
+                    perimeter. Its façade features a modest portal with intricate tilework and carved wooden doors. The
+                    interior courtyard has a mosque and lecture halls, all adorned with geometric patterns in muted
+                    blues and greens. The brick construction includes decorative niches and arched alcoves. Unlike
+                    earlier madrasas, its ornamentation is simpler, reflecting 19th-century economic constraints. The
+                    structure’s compact design maximizes space efficiently, typical of late-era Bukharan religious
+                    schools. Restoration work has preserved its original charm while reinforcing its aging walls.
+                </p>
+
+                <h3 class="minaret-subtitle">Legends</h3>
+                <p class="minaret-text-last">
+                    A legend claims that the madrasa’s founder, Emir Nasrullah, buried a cursed manuscript in its
+                    foundations. Anyone who disturbs it will face misfortune—a warning that kept Soviet archaeologists
+                    from excavating the site during their surveys of Bukhara.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="custom-line">
+
+
+    <footer class="footer">
+        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+            to future generations. Our cultural and natural heritage are both irreplaceable sources of life
+            and inspiration.” - UNESCO (World Heritage)</p>
+
+        <div class="footer-bottom">
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
+                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                </div>
+                <div class="footer-copy">
+                    © 2025 <span>Kohna Meros</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

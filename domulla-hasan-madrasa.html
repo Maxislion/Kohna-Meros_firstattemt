@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domulla Hasan Madrasa</title>
+    <link rel="icon" href="style/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style/css/miri-arab-madrassa.css">
+    <link rel="stylesheet" href="style/css/base-responsive.css">
+    <link rel="stylesheet" href="style/css/mini-arab-madrassa-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="header-nav">
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="index.html"><img src="style/img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <div class="burger" onclick="toggleMobileMenu()">
+                    &#9776;
+                </div>
+
+                <div class="left_nav" id="mainMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="minaret-kalyan.html">Architecture</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobile-nav" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="minaret-kalyan.html">Architecture</a>
+                <a href="about.html">About us</a>
+                <a href="#">Stories</a>
+                <a href="#">Contact</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </header>
+
+
+    <hr class="custom-line">
+
+
+    <section class="minaret-section">
+        <h2 class="minaret-title">Domulla Hasan Madrasa</h2>
+
+        <div class="minaret-content">
+            <div class="minaret-model">
+                <model-viewer class="modelviewer" src="style/models/Domulla_Hasan_Madrasa.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"
+                    poster="style/models/poster/Domulla_Hasan_Madrasa.webp" shadow-intensity="0"
+                    environment-image="style/models/fada.hdr" exposure="1.79" shadow-softness="1"
+                    camera-orbit="-0.3947deg 86.45deg 2.816m" field-of-view="22.98deg">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <div id="ar-prompt">
+                        <img src="ar_hand_prompt.png">
+                    </div>
+                </model-viewer>
+
+            </div>
+
+            <div class="minaret-text-box">
+                <h3 class="minaret-subtitle">Short Historical Overview</h3>
+                <p class="minaret-text">
+                    Built in the late 16th century, the Domulla Hasan Madrasa is linked to a prominent Islamic jurist.
+                    It served as a school for theology and law during the Shaybanid dynasty’s rule. Unlike grander
+                    madrasas, it emphasized intimate study circles, fostering deep scholarly debates. Over time, it
+                    became a hub for local judges (qazis) training. The madrasa weathered political changes, including
+                    Bukhara’s annexation by Russia, but fell into decline in the early 20th century. Recent restorations
+                    have revived its architectural beauty, though it no longer functions as a school, standing instead
+                    as a quiet testament to Bukhara’s scholarly past.
+                </p>
+
+                <h3 class="minaret-subtitle">Structural Insights</h3>
+                <p class="minaret-text">
+                    The madrasa’s design is compact, with a single-story layout around a small courtyard. Its brick
+                    façade includes a recessed entrance with minimal tilework, focusing on geometric brick patterns. The
+                    hujras (cells) feature arched doorways and small windows for natural light. The prayer hall has a
+                    simple mihrab with stucco carvings. The madrasa’s modest scale reflects its role as a neighborhood
+                    school rather than a monumental institution. Restoration efforts have preserved its original
+                    brickwork and reinforced the wooden ceiling beams. Its understated elegance exemplifies the
+                    functional yet beautiful architecture of late medieval Bukhara.
+                </p>
+
+                <h3 class="minaret-subtitle">Fun Fact</h3>
+                <p class="minaret-text-last">
+                    After the Soviet era, the madrasa was repurposed, and in the 2010s was restored as a cultural and
+                    tourist facility, with ground-floor rooms used as shops.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="custom-line">
+
+
+    <footer class="footer">
+        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+            to future generations. Our cultural and natural heritage are both irreplaceable sources of life
+            and inspiration.” - UNESCO (World Heritage)</p>
+
+        <div class="footer-bottom">
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
+                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                </div>
+                <div class="footer-copy">
+                    © 2025 <span>Kohna Meros</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

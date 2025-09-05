@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ark Fortress</title>
+    <link rel="icon" href="style/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style/css/miri-arab-madrassa.css">
+    <link rel="stylesheet" href="style/css/base-responsive.css">
+    <link rel="stylesheet" href="style/css/mini-arab-madrassa-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="header-nav">
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="index.html"><img src="style/img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <div class="burger" onclick="toggleMobileMenu()">
+                    &#9776;
+                </div>
+
+                <div class="left_nav" id="mainMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="minaret-kalyan.html">Architecture</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobile-nav" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="minaret-kalyan.html">Architecture</a>
+                <a href="about.html">About us</a>
+                <a href="#">Stories</a>
+                <a href="#">Contact</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </header>
+
+
+    <hr class="custom-line">
+
+
+    <section class="minaret-section">
+        <h2 class="minaret-title">Ark Fortress</h2>
+
+        <div class="minaret-content">
+            <div class="minaret-model">
+                <model-viewer class="modelviewer" src="style/models/Arc.glb" ar ar-modes="webxr scene-viewer quick-look"
+                    camera-controls tone-mapping="aces" poster="style/models/poster/Arc.webp" shadow-intensity="0"
+                    environment-image="style/models/poolbeg_4k.hdr" exposure="2"
+                    camera-orbit="-0.3947deg 88.82deg 2.585m" field-of-view="20.91deg">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <div id="ar-prompt">
+                        <img src="ar_hand_prompt.png">
+                    </div>
+                </model-viewer>
+
+            </div>
+
+            <div class="minaret-text-box">
+                <h3 class="minaret-subtitle">Short Historical Overview</h3>
+                <p class="minaret-text">
+                    The Ark fortress is a massive building constructed in 5th century AD, remaining one of the oldest
+                    edifices in Central Asia. Originally constructed on a hill that previously served as a settlement,
+                    Ark served as a centre of power for centuries. It used to be a well-functioning city within a city:
+                    mosques, learning centres, palaces, government offices, and even prisons were constructed in the
+                    fortress. In spite of the demolition brought by Mongol conquests, the fortification was restored and
+                    functioning until the 1920 Russian invasion.
+                </p>
+
+                <h3 class="minaret-subtitle">Structural Insights</h3>
+                <p class="minaret-text">
+                    Enclosing almost 4 hectares, the stronghold is confined by earthen walls stretching up to 20 metres
+                    high. They were covered by clay plaster to prevent erosion caused by precipitation. High position on
+                    the hills and well-structured walls which crowned battlements enabled defense of the fortress from
+                    invaders.
+                </p>
+
+                <h3 class="minaret-subtitle">Legends</h3>
+                <p class="minaret-text-last">
+                    Ark was built by Siyovush, a son of a Persian ruler who fell in love with king Afrasiyab’s daughter.
+                    Afrasiyab set a condition: to build a palace that would fit within a bull’s skin. Siyovush cut the
+                    skin into stripes and made a boundary using those stripes, thereby fitting a fortress within the
+                    skin of a bull.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="custom-line">
+
+
+    <footer class="footer">
+        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+            to future generations. Our cultural and natural heritage are both irreplaceable sources of life
+            and inspiration.” - UNESCO (World Heritage)</p>
+
+        <div class="footer-bottom">
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
+                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                </div>
+                <div class="footer-copy">
+                    © 2025 <span>Kohna Meros</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
