@@ -155,7 +155,7 @@ header {
 }
 
 .iframe-google-maps {
-    width: 100%;
+    width: 1200px;
     height: 500px;
     border: none;
     border-radius: 8px;
