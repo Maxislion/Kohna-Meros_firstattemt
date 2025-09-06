@@ -61,15 +61,16 @@
 
         <div class="minaret-content">
             <div class="minaret-model">
-                <model-viewer class="modelviewer" src="style/models/Miri_Arab_Mosque.glb" ar ar-modes="webxr scene-viewer quick-look"
-                    camera-controls tone-mapping="aces" poster="style/models/poster/Miri_Arab_Mosque.webp" shadow-intensity="2"
-                    environment-image="style/models/qwantani_dusk_2_puresky_4k.hdr" exposure="0.85"
-                    skybox-image="style/models/qwantani_dusk_2_puresky_4k.hdr">
+                <model-viewer class="modelviewer" src="style/models/Miri_Arab_Mosque.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
+                    poster="style/models/poster/Miri_Arab_Mosque.webp" shadow-intensity="0" exposure="1.73"
+                    shadow-softness="1" environment-image="style/models/fada.hdr"
+                    camera-orbit="1.184deg 88.03deg 2.404m" field-of-view="22.98deg">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
                     <div id="ar-prompt">
-                        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                        <img src="ar_hand_prompt.png">
                     </div>
                 </model-viewer>
 
