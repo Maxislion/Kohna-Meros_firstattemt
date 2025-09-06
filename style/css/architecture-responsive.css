@@ -68,3 +68,10 @@
         grid-template-rows: repeat(20, auto);
     }
 }
+
+@media (max-width: 320px) {
+    .iframe-google-maps {
+        width: 250px;
+        height: 150px;
+    }
+}
