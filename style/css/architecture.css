@@ -184,9 +184,7 @@ header {
 .links-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* 4 столбца */
     grid-template-rows: repeat(5, auto);
-    /* 3 строки */
     gap: 30px;
 }
 
@@ -206,9 +204,7 @@ header {
 
 .links-grid a:hover {
     color: #125a8c;
-    /* более тёмный синий */
     border-color: #1772B9;
-    /* фирменный синий */
 }
 
 
