@@ -139,13 +139,6 @@ header {
     align-items: center;
 }
 
-.map-box h3 {
-    margin-bottom: 10px;
-    color: #1772B9;
-    font-size: 18px;
-    font-family: 'Inter', sans-serif;
-}
-
 .custom-line-2 {
     width: 30%;
     height: 1.5px;

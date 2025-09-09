@@ -188,6 +188,18 @@ header {
     color: #1772B9;
 }
 
+.map-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iframe-google-maps {
+    width: 1120px;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+}
 
 /* footer-start */
 .footer {
