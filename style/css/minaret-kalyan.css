@@ -84,15 +84,15 @@ header {
 }
 
 .mobile-nav {
-  display: none;
-  flex-direction: column;
-  background-color: white;
-  position: absolute;
-  width: 100%;
-  top: 100%;
-  left: 0;
-  z-index: 999;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-nav a {
@@ -156,7 +156,7 @@ header {
     display: none;
 }
 
-.modelviewer{
+.modelviewer {
     width: 400px;
     height: 780px;
 }
@@ -191,6 +191,19 @@ header {
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #1772B9;
+}
+
+.map-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.iframe-google-maps {
+    width: 1150px;
+    height: 500px;
+    border-radius: 8px;
 }
 
 
