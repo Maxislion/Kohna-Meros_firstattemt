@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  const langSelect = document.getElementById("languageSwitcher");
+  const langDesktop = document.getElementById("languageSwitcherDesktop");
+  const langMobile = document.getElementById("languageSwitcherMobile");
 
   const title = document.querySelector(".minaret-title");
   const overviewTitle = document.querySelectorAll(".minaret-subtitle")[0];
@@ -46,11 +47,21 @@ document.addEventListener("DOMContentLoaded", function () {
     funFactText.textContent = t.funFactText;
   }
 
-  // При загрузке — английский по умолчанию
-  updateLanguage("en");
+  function syncLanguage(lang) {
+    langDesktop.value = lang;
+    langMobile.value = lang;
+    updateLanguage(lang);
+  }
 
-  // При переключении
-  langSelect.addEventListener("change", function () {
-    updateLanguage(this.value);
+  // английский по умолчанию
+  syncLanguage("en");
+
+  // слушатели
+  langDesktop.addEventListener("change", function () {
+    syncLanguage(this.value);
+  });
+
+  langMobile.addEventListener("change", function () {
+    syncLanguage(this.value);
   });
 });
