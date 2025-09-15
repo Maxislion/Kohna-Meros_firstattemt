@@ -125,6 +125,7 @@ header {
     font-size: 45px;
     font-family: 'Dancing Script', cursive;
     color: #1772B9;
+    font-weight: normal;
 }
 
 .maps-container {
@@ -164,6 +165,7 @@ header {
     font-size: 45px;
     font-family: 'Dancing Script', cursive;
     color: #1772B9;
+    font-weight: normal;
 }
 
 .custom-line-3 {

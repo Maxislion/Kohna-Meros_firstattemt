@@ -32,22 +32,30 @@
                 <div class="left_nav" id="mainMenu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
+                        <li><a href="">Mission</a></li>
                         <li><a href="architecture.html">Architecture</a></li>
-                        <li><a href="about.html">About us</a></li>
+                        <li><a href="about.html">Contact</a></li>
                         <li><a href="#">Stories</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">English</a></li>
+                        <li>
+                            <select id="languageSwitcherDesktop">
+                                <option value="en">English</option>
+                                <option value="uz">Oʻzbek</option>
+                            </select>
+                        </li>
                     </ul>
                 </div>
             </nav>
 
             <div class="mobile-nav" id="mobileMenu">
                 <a href="index.html">Home</a>
+                <a href="">Mission</a>
                 <a href="architecture.html">Architecture</a>
-                <a href="about.html">About us</a>
+                <a href="about.html">Contact</a>
                 <a href="#">Stories</a>
-                <a href="#">Contact</a>
-                <a href="#">English</a>
+                <select id="languageSwitcherMobile">
+                    <option value="en">English</option>
+                    <option value="uz">Oʻzbek</option>
+                </select>
             </div>
         </div>
     </header>
@@ -64,8 +72,7 @@
                 <model-viewer class="modelviewer" src="style/models/Abdullaziz_Khan.glb" ar
                     ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"
                     poster="style/models/poster/Abdullaziz_Khan.webp" shadow-intensity="0"
-                    environment-image="style/models/poolbeg_4k.hdr" exposure="2"
-                    camera-orbit="-0.3947deg 88.82deg 2.585m" field-of-view="20.91deg">
+                    environment-image="style/models/poolbeg_4k.hdr" exposure="2">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -136,13 +143,8 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    
+    <script src="style/js/script.js"></script>
 </body>
 
 </html>
