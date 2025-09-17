@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    min-width: 320px;
+    min-width: 375px;
 }
 
 * {
@@ -83,6 +83,30 @@ header {
     color: #1772B9;
 }
 
+#languageSwitcherDesktop, #languageSwitcherMobile {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: #1772B9;
+    cursor: pointer;
+    outline: none;
+    padding-right: 14px; /* место для стрелки */
+    
+    /* кастомная стрелка */
+    appearance: none; /* отключаем стандартную */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%231772B9' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 12px;
+}
+
+
+
 .mobile-nav {
   display: none;
   flex-direction: column;
@@ -111,6 +135,7 @@ header {
         #1772B9;
     border: none;
 }
+
 
 /* section-start */
 section {

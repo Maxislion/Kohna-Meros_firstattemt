@@ -1,9 +1,4 @@
 @media (max-width: 992px) {
-
-    .left_nav ul li {
-        font-size: 13px !important;
-    }
-
     .who-we-are {
         max-width: 660px;
         padding: 10px 75px 40px 75px;
@@ -32,11 +27,6 @@
 }
 
 @media (max-width: 768px) {
-
-    .left_nav ul li {
-        font-size: 10px !important;
-    }
-
     .who-we-are {
         max-width: 500px;
         padding: 10px 40px 40px 40px;

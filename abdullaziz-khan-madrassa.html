@@ -32,27 +32,30 @@
                 <div class="left_nav" id="mainMenu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="">Mission</a></li>
+                        <!-- <li><a href="">Mission</a></li> -->
                         <li><a href="architecture.html">Architecture</a></li>
                         <li><a href="about.html">Contact</a></li>
-                        <li><a href="#">Stories</a></li>
+                        <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
+                                <option value="" selected disabled>Languages:</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
                         </li>
+
                     </ul>
                 </div>
             </nav>
 
             <div class="mobile-nav" id="mobileMenu">
                 <a href="index.html">Home</a>
-                <a href="">Mission</a>
+                <!-- <a href="">Mission</a> -->
                 <a href="architecture.html">Architecture</a>
                 <a href="about.html">Contact</a>
-                <a href="#">Stories</a>
+                <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
+                    <option value="" selected disabled>Languages:</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -60,9 +63,7 @@
         </div>
     </header>
 
-
     <hr class="custom-line">
-
 
     <section class="minaret-section">
         <h2 class="minaret-title">Abdullaziz‑Khan Madrassa</h2>
@@ -70,9 +71,10 @@
         <div class="minaret-content">
             <div class="minaret-model">
                 <model-viewer class="modelviewer" src="style/models/Abdullaziz_Khan.glb" ar
-                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"
-                    poster="style/models/poster/Abdullaziz_Khan.webp" shadow-intensity="0"
-                    environment-image="style/models/poolbeg_4k.hdr" exposure="2">
+                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
+                    poster="style/models/poster/Abdullaziz_Khan.webp" shadow-intensity="0.4"
+                    environment-image="style/models/poolbeg_4k.hdr" exposure="1.7" camera-orbit="0deg 75deg 3.59m"
+                    field-of-view="26.26deg">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -80,8 +82,19 @@
                         <img src="ar_hand_prompt.png">
                     </div>
                 </model-viewer>
-
             </div>
+
+            <div class="photo-slider">
+                <div class="slides">
+                    <img src="style/img_buildings/Photo_Abdulaziz_Khan_1.jpg" class="active" alt="Abdullaziz Khan Madrassa 1">
+                    <img src="style/img_buildings/Photo_Abdulaziz_Khan_2.jpg" alt="Abdullaziz Khan Madrassa 2">
+                    <img src="style/img_buildings/Photo_Abdulaziz_Khan_3.jpg" alt="Abdullaziz Khan Madrassa 3">
+                </div>
+
+                <button class="arrow-btn left" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="arrow-btn right" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
 
             <div class="minaret-text-box">
                 <h3 class="minaret-subtitle">Short Historical Overview</h3>
@@ -143,8 +156,9 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="style/js/script.js"></script>
+    <script src="style/js/commonTranslations.js"></script>
 </body>
 
 </html>

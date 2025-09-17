@@ -32,22 +32,33 @@
                 <div class="left_nav" id="mainMenu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="">Mission</a></li>
+                        <!-- <li><a href="">Mission</a></li> -->
                         <li><a href="architecture.html">Architecture</a></li>
                         <li><a href="about.html">Contact</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">English</a></li>
+                        <!-- <li><a href="#">Stories</a></li> -->
+                        <li>
+                            <select id="languageSwitcherDesktop">
+                                <option value="" selected disabled>Languages:</option>
+                                <option value="en">English</option>
+                                <option value="uz">Oʻzbek</option>
+                            </select>
+                        </li>
+
                     </ul>
                 </div>
             </nav>
 
             <div class="mobile-nav" id="mobileMenu">
                 <a href="index.html">Home</a>
-                <a href="">Mission</a>
+                <!-- <a href="">Mission</a> -->
                 <a href="architecture.html">Architecture</a>
                 <a href="about.html">Contact</a>
-                <a href="#">Stories</a>
-                <a href="#">English</a>
+                <!-- <a href="#">Stories</a> -->
+                <select id="languageSwitcherMobile">
+                    <option value="" selected disabled>Languages:</option>
+                    <option value="en">English</option>
+                    <option value="uz">Oʻzbek</option>
+                </select>
             </div>
         </div>
     </header>
@@ -61,11 +72,12 @@
 
         <div class="minaret-content">
             <div class="minaret-model">
+
                 <model-viewer class="modelviewer" src="style/models/Alam.glb" ar
-                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"
-                    poster="style/models/poster/Alam.webp" shadow-intensity="0"
-                    environment-image="style/models/poolbeg_4k.hdr" exposure="2"
-                    camera-orbit="-0.3947deg 86.45deg 3.189m" field-of-view="22.98deg">
+                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
+                    poster="style/models/poster/Alam.webp" shadow-intensity="1" exposure="1.55"
+                    environment-image="style/models/flamingo_pan_4k.hdr" camera-orbit="7.653e-15deg 78.26deg 4.284m"
+                    field-of-view="26.26deg">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -73,7 +85,15 @@
                         <img src="ar_hand_prompt.png">
                     </div>
                 </model-viewer>
+            </div>
 
+            <div class="photo-slider">
+                <div class="slides">
+                    <img src="style/img_buildings/Photo_Alam.jpg" class="active" alt="Alam Madrassa 1">
+                </div>
+
+                <button class="arrow-btn left" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="arrow-btn right" onclick="moveSlide(1)">&#10095;</button>
             </div>
 
             <div class="minaret-text-box">

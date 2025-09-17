@@ -32,22 +32,33 @@
                 <div class="left_nav" id="mainMenu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="">Mission</a></li>
+                        <!-- <li><a href="">Mission</a></li> -->
                         <li><a href="architecture.html">Architecture</a></li>
                         <li><a href="about.html">Contact</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">English</a></li>
+                        <!-- <li><a href="#">Stories</a></li> -->
+                        <li>
+                            <select id="languageSwitcherDesktop">
+                                <option value="" selected disabled>Languages:</option>
+                                <option value="en">English</option>
+                                <option value="uz">Oʻzbek</option>
+                            </select>
+                        </li>
+
                     </ul>
                 </div>
             </nav>
 
             <div class="mobile-nav" id="mobileMenu">
                 <a href="index.html">Home</a>
-                <a href="">Mission</a>
+                <!-- <a href="">Mission</a> -->
                 <a href="architecture.html">Architecture</a>
                 <a href="about.html">Contact</a>
-                <a href="#">Stories</a>
-                <a href="#">English</a>
+                <!-- <a href="#">Stories</a> -->
+                <select id="languageSwitcherMobile">
+                    <option value="" selected disabled>Languages:</option>
+                    <option value="en">English</option>
+                    <option value="uz">Oʻzbek</option>
+                </select>
             </div>
         </div>
     </header>
@@ -61,11 +72,9 @@
 
         <div class="minaret-content">
             <div class="minaret-model">
-                <model-viewer class="modelviewer" src="style/models/Balyand.glb" ar
-                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
-                    poster="style/models/poster/Balyand.webp" shadow-intensity="0"
-                    environment-image="style/models/aircraft_workshop_01_1k.hdr" exposure="2"
-                    camera-orbit="-0.3947deg 86.45deg 2.807m" field-of-view="22.98deg">
+                <model-viewer class="modelviewer" src="style/models/Balyand.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                    tone-mapping="agx" poster="style/models/poster/Balyand.webp" shadow-intensity="0" environment-image="style/models/poolbeg_4k.hdr"
+                    exposure="2" camera-orbit="-1.813deg 78.63deg 3.023m" field-of-view="26.26deg" shadow-softness="1">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -73,7 +82,16 @@
                         <img src="ar_hand_prompt.png">
                     </div>
                 </model-viewer>
+            </div>
 
+            <div class="photo-slider">
+                <div class="slides">
+                    <img src="style/img_buildings/Photo_Balyand_1.webp" class="active" alt="Balyand Mosque 1">
+                    <img src="style/img_buildings/Photo_Balyand_2.webp" alt="Balyand Mosque 2">
+                </div>
+
+                <button class="arrow-btn left" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="arrow-btn right" onclick="moveSlide(1)">&#10095;</button>
             </div>
 
             <div class="minaret-text-box">
@@ -130,12 +148,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/script.js"></script>
 </body>
 
 </html>

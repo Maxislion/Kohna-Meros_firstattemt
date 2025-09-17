@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+   <header>
         <div class="header-container">
             <nav class="header-nav">
                 <div class="left_side">
@@ -32,22 +32,33 @@
                 <div class="left_nav" id="mainMenu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="">Mission</a></li>
+                        <!-- <li><a href="">Mission</a></li> -->
                         <li><a href="architecture.html">Architecture</a></li>
                         <li><a href="about.html">Contact</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">English</a></li>
+                        <!-- <li><a href="#">Stories</a></li> -->
+                        <li>
+                            <select id="languageSwitcherDesktop">
+                                <option value="" selected disabled>Languages:</option>
+                                <option value="en">English</option>
+                                <option value="uz">Oʻzbek</option>
+                            </select>
+                        </li>
+
                     </ul>
                 </div>
             </nav>
 
             <div class="mobile-nav" id="mobileMenu">
                 <a href="index.html">Home</a>
-                <a href="">Mission</a>
+                <!-- <a href="">Mission</a> -->
                 <a href="architecture.html">Architecture</a>
                 <a href="about.html">Contact</a>
-                <a href="#">Stories</a>
-                <a href="#">English</a>
+                <!-- <a href="#">Stories</a> -->
+                <select id="languageSwitcherMobile">
+                    <option value="" selected disabled>Languages:</option>
+                    <option value="en">English</option>
+                    <option value="uz">Oʻzbek</option>
+                </select>
             </div>
         </div>
     </header>

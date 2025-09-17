@@ -32,22 +32,33 @@
                 <div class="left_nav" id="mainMenu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="">Mission</a></li>
+                        <!-- <li><a href="">Mission</a></li> -->
                         <li><a href="architecture.html">Architecture</a></li>
                         <li><a href="about.html">Contact</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">English</a></li>
+                        <!-- <li><a href="#">Stories</a></li> -->
+                        <li>
+                            <select id="languageSwitcherDesktop">
+                                <option value="" selected disabled>Languages:</option>
+                                <option value="en">English</option>
+                                <option value="uz">Oʻzbek</option>
+                            </select>
+                        </li>
+
                     </ul>
                 </div>
             </nav>
 
             <div class="mobile-nav" id="mobileMenu">
                 <a href="index.html">Home</a>
-                <a href="">Mission</a>
+                <!-- <a href="">Mission</a> -->
                 <a href="architecture.html">Architecture</a>
                 <a href="about.html">Contact</a>
-                <a href="#">Stories</a>
-                <a href="#">English</a>
+                <!-- <a href="#">Stories</a> -->
+                <select id="languageSwitcherMobile">
+                    <option value="" selected disabled>Languages:</option>
+                    <option value="en">English</option>
+                    <option value="uz">Oʻzbek</option>
+                </select>
             </div>
         </div>
     </header>
@@ -62,9 +73,9 @@
         <div class="minaret-content">
             <div class="minaret-model">
                 <model-viewer class="modelviewer" src="style/models/Arc.glb" ar ar-modes="webxr scene-viewer quick-look"
-                    camera-controls tone-mapping="aces" poster="style/models/poster/Arc.webp" shadow-intensity="0"
-                    environment-image="style/models/poolbeg_4k.hdr" exposure="2"
-                    camera-orbit="-0.3947deg 88.82deg 2.585m" field-of-view="20.91deg">
+                    camera-controls tone-mapping="aces" poster="style/models/poster/Arc.webp" shadow-intensity="1"
+                    environment-image="style/models/flamingo_pan_4k.hdr" exposure="1.65"
+                    camera-orbit="0deg 75deg 4.882m" field-of-view="30deg">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -72,7 +83,17 @@
                         <img src="ar_hand_prompt.png">
                     </div>
                 </model-viewer>
+            </div>
 
+            <div class="photo-slider">
+                <div class="slides">
+                    <img src="style/img_buildings/Photo_Arc_1.jpg" class="active" alt="Arc 1">
+                    <img src="style/img_buildings/Photo_Arc_2.jpg" alt="Arc 2">
+                    <img src="style/img_buildings/Photo_Arc_3.jpg" alt="Arc 3">
+                </div>
+
+                <button class="arrow-btn left" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="arrow-btn right" onclick="moveSlide(1)">&#10095;</button>
             </div>
 
             <div class="minaret-text-box">
@@ -131,12 +152,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/script.js"></script>
 </body>
 
 </html>
