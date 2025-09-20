@@ -38,7 +38,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -55,7 +55,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -68,11 +68,10 @@
 
 
     <section class="minaret-section">
-        <h2 class="minaret-title">A’lam Madrasa</h2>
+        <h2 class="minaret-title" data-key="alam-title">A’lam Madrasa</h2>
 
         <div class="minaret-content">
             <div class="minaret-model">
-
                 <model-viewer class="modelviewer" src="style/models/Alam.glb" ar
                     ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
                     poster="style/models/poster/Alam.webp" shadow-intensity="1" exposure="1.55"
@@ -91,15 +90,14 @@
                 <div class="slides">
                     <img src="style/img_buildings/Photo_Alam.jpg" class="active" alt="Alam Madrassa 1">
                 </div>
-
                 <button class="arrow-btn left" onclick="moveSlide(-1)">&#10094;</button>
                 <button class="arrow-btn right" onclick="moveSlide(1)">&#10095;</button>
             </div>
 
             <div class="minaret-text-box">
-                <h3 class="minaret-subtitle">Short Historical Overview</h3>
-                <p class="minaret-text">
-                     Constructed in 1825 by the Emir of Bukhara, Nasrullah Khan, the A’lam Madrasa was a center of
+                <h3 class="minaret-subtitle" data-key="alam-overview-title">Short Historical Overview</h3>
+                <p class="minaret-text" data-key="alam-overview">
+                    Constructed in 1825 by the Emir of Bukhara, Nasrullah Khan, the A’lam Madrasa was a center of
                     Islamic scholarship. Named after a revered scholar, it attracted students from across Central Asia.
                     Unlike older madrasas, it reflects late-period Bukharan architecture, with less grandeur but refined
                     craftsmanship. It functioned as a religious school until the Soviet era, when it was repurposed for
@@ -108,8 +106,8 @@
                     Bukhara’s intellectual heritage.
                 </p>
 
-                <h3 class="minaret-subtitle">Structural Insights</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="alam-structure-title">Structural Insights</h3>
+                <p class="minaret-text" data-key="alam-structure">
                     The madrasa follows a traditional courtyard layout, with student cells (hujras) lining the
                     perimeter. Its façade features a modest portal with intricate tilework and carved wooden doors. The
                     interior courtyard has a mosque and lecture halls, all adorned with geometric patterns in muted
@@ -119,8 +117,8 @@
                     schools. Restoration work has preserved its original charm while reinforcing its aging walls.
                 </p>
 
-                <h3 class="minaret-subtitle">Legends</h3>
-                <p class="minaret-text-last">
+                <h3 class="minaret-subtitle" data-key="alam-legends-title">Legends</h3>
+                <p class="minaret-text-last" data-key="alam-legends">
                     A legend claims that the madrasa’s founder, Emir Nasrullah, buried a cursed manuscript in its
                     foundations. Anyone who disturbs it will face misfortune—a warning that kept Soviet archaeologists
                     from excavating the site during their surveys of Bukhara.
@@ -136,6 +134,7 @@
         </div>
     </section>
 
+
     <hr class="custom-line">
 
 
@@ -148,7 +147,7 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -157,12 +156,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/alam.js"></script>
 </body>
 
 </html>

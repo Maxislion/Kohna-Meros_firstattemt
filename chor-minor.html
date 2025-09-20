@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="header-container">
             <nav class="header-nav">
                 <div class="left_side">
@@ -38,7 +38,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -55,7 +55,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -68,14 +68,13 @@
 
 
     <section class="minaret-section">
-        <h2 class="minaret-title">Chor Minor</h2>
+        <h2 class="minaret-title" data-key="chor_title">Chor Minor</h2>
 
         <div class="minaret-content">
             <div class="minaret-model">
-                <model-viewer class="modelviewer" src="style/models/Chor Minor.glb" ar
-                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
-                    poster="style/models/poster/Chor-Minor.webp" shadow-intensity="0"
-                    environment-image="style/models/cada.hdr" exposure="2" shadow-softness="1">
+                <model-viewer class="modelviewer" src="style/models/Chor Minor.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                    tone-mapping="aces" poster="style/models/poster/Chor-Minor.webp" shadow-intensity="1" environment-image="style/models/goegap_4k.hdr"
+                    exposure="1.95" camera-orbit="0deg 75deg 2.998m" field-of-view="26.26deg">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -83,12 +82,11 @@
                         <img src="ar_hand_prompt.png">
                     </div>
                 </model-viewer>
-
             </div>
 
             <div class="minaret-text-box">
-                <h3 class="minaret-subtitle">Short Historical Overview</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="chor_overview_title">Short Historical Overview</h3>
+                <p class="minaret-text" data-key="chor_overview_text">
                     Built in 1807 by Khalif Niyazkul, a wealthy Turkmen merchant, Chor Minor (“Four Minarets”) is one of
                     Bukhara’s most whimsical landmarks. Unlike traditional madrasas, it served as a gatehouse to a
                     now-vanished complex. Its unique design blends Central Asian, Persian, and Indian influences,
@@ -98,8 +96,8 @@
                     appearance and mysterious origins.
                 </p>
 
-                <h3 class="minaret-subtitle">Structural Insights</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="chor_structural_title">Structural Insights</h3>
+                <p class="minaret-text" data-key="chor_structural_text">
                     Chor Minor’s four turquoise-domed towers (only two are true minarets) rise from a square base, each
                     decorated with unique tile patterns symbolizing different religions or philosophies. The central
                     dome covers a small prayer room. The towers’ hollow interiors have narrow staircases, but only one
@@ -109,12 +107,13 @@
                     fascinating departure from traditional Islamic architecture.
                 </p>
 
-                <h3 class="minaret-subtitle">Fun Fact</h3>
-                <p class="minaret-text-last">
+                <h3 class="minaret-subtitle" data-key="chor_funfact_title">Fun Fact</h3>
+                <p class="minaret-text-last" data-key="chor_funfact_text">
                     The legend says that each minaret was dedicated to one of the merchant’s daughters. Thus, the
                     decoration of each tower differs, representing four daughters’ personalities.
                 </p>
             </div>
+
             <div class="map-box">
                 <iframe class="iframe-google-maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.93991294162413!2d64.42688860017462!3d39.77477558384923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f500606e24941c9%3A0xc6dca621840fada3!2z0JzQtdC00YDQtdGB0LUg0KfQvtGAINCc0LjQvdC-0YA!5e1!3m2!1sru!2s!4v1757431631413!5m2!1sru!2s"
@@ -123,6 +122,7 @@
             </div>
         </div>
     </section>
+
 
     <hr class="custom-line">
 
@@ -136,7 +136,8 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin"
+                            src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -145,12 +146,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/chor-minor.js"></script>
 </body>
 
 </html>

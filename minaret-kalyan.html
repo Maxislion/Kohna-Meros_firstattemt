@@ -38,7 +38,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -55,7 +55,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -68,7 +68,7 @@
 
 
     <section class="minaret-section">
-        <h2 class="minaret-title">Minaret Kalyan</h2>
+        <h2 class="minaret-title" data-key="minarettitle">Minaret Kalyan</h2>
 
         <div class="minaret-content">
             <div class="minaret-model">
@@ -87,8 +87,8 @@
             </div>
 
             <div class="minaret-text-box">
-                <h3 class="minaret-subtitle">Short Historical Overview</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="overviewtitle">Short Historical Overview</h3>
+                <p class="minaret-text" data-key="overviewtext">
                     Built in 1127, Kalyan Minaret (Big Lighthouse) reflects the greatness of 12th century Oriental
                     architecture.
                     In times of peace, it was used to call for five-time prayers, with the voice stretching
@@ -97,8 +97,8 @@
                     in peaceful times and during wars.
                 </p>
 
-                <h3 class="minaret-subtitle">Structural Insights</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="structuralinsightstitle">Structural Insights</h3>
+                <p class="minaret-text" data-key="structuralinsightstext">
                     The cylindrical tower stretches 47 feet up and 10 meters down at its foundation. Tower is made of
                     fired bricks with different ornamental strip patterns — 14, to be more specific.
                     Foundation was left to rest for two years before beginning the construction of the building.
@@ -107,8 +107,8 @@
                     bolsheviks.
                 </p>
 
-                <h3 class="minaret-subtitle">Fun Fact</h3>
-                <p class="minaret-text-last">
+                <h3 class="minaret-subtitle" data-key="legendtitle">Fun Fact</h3>
+                <p class="minaret-text-last" data-key="legendtext">
                     Legend says camel milk, bull’s blood, and eggs were mixed into the bricks to strengthen the
                     mortar
                     at the foundation.
@@ -139,7 +139,7 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -148,12 +148,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/minaret-kalyan.js"></script>
 
 </body>
 

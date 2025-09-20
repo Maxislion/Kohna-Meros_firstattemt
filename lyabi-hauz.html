@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="header-container">
             <nav class="header-nav">
                 <div class="left_side">
@@ -38,7 +38,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -55,7 +55,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -68,15 +68,13 @@
 
 
     <section class="minaret-section">
-        <h2 class="minaret-title">Lyabi-Hauz</h2>
+        <h2 class="minaret-title" data-key="title">Lyabi-Hauz</h2>
 
         <div class="minaret-content">
             <div class="minaret-model">
-                <model-viewer class="modelviewer" src="style/models/Lyabi Hauz.glb" ar
-                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
-                    poster="style/models/poster/Lyabi-Hauz.webp" shadow-intensity="0" exposure="1.55"
-                    shadow-softness="1" environment-image="style/models/fada.hdr"
-                    camera-orbit="-0.3947deg 88.82deg 2.585m" field-of-view="20.91deg">
+                <model-viewer class="modelviewer" src="style/models/Lyabi Hauz.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                    tone-mapping="aces" poster="style/models/poster/Lyabi-Hauz.webp" shadow-intensity="0.76" environment-image="style/models/poolbeg_4k.hdr"
+                    exposure="1.92" shadow-softness="0.82">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -87,15 +85,15 @@
             </div>
 
             <div class="minaret-text-box">
-                <h3 class="minaret-subtitle">Short Historical Overview</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="overviewtitle">Short Historical Overview</h3>
+                <p class="minaret-text" data-key="overviewtext">
                     Lab-i Hauz is an ensemble that includes three buildings around a pool: Kukeldash madrassah, Khanqah,
                     and madrassa of Nadir Divan-begi. The ensemble was built between the 16th and 17th centuries by
                     Nadir Divan-begi, a patron of Islam and a noble man of that time.
                 </p>
 
-                <h3 class="minaret-subtitle">Structural Insights</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="structuraltitle">Structural Insights</h3>
+                <p class="minaret-text" data-key="structuraltext">
                     Each edifice in the Lab-i Hauz ensemble is made of baked bricks, a usual practice of medieval
                     Bukharian architecture. They follow the same pattern, with glazed ornamentation of entrance and arch
                     opening. When it comes to the pond, it is 2.5 metres deep, with limestone coverage on the steps. It
@@ -123,7 +121,8 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin"
+                            src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -132,12 +131,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/lyabi-hauz.js"></script>
 </body>
 
 </html>

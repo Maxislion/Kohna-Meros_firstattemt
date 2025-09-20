@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="header-container">
             <nav class="header-nav">
                 <div class="left_side">
@@ -38,7 +38,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -55,7 +55,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -68,14 +68,14 @@
 
 
     <section class="minaret-section">
-        <h2 class="minaret-title">Khanqah</h2>
+        <h2 class="minaret-title" data-key="khanqahTitle">Khanqah</h2>
 
         <div class="minaret-content">
             <div class="minaret-model">
-                <model-viewer class="modelviewer" src="style/models/Khanqah.glb" ar
-                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
-                    poster="style/models/poster/Khanqah.webp" shadow-intensity="0" exposure="1.09" shadow-softness="1"
-                    environment-image="legacy" camera-orbit="-0.3947deg 88.82deg 2.585m" field-of-view="20.91deg">
+
+                <model-viewer class="modelviewer" src="style/models/Khanqah.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                    tone-mapping="aces" poster="style/models/poster/Khanqah.webp" shadow-intensity="1"
+                    environment-image="style/models/43129d40-648e-40eb-b8df-43552679682d.hdr" exposure="1.62">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -84,25 +84,36 @@
                     </div>
                 </model-viewer>
 
+                <div class="photo-slider">
+                <div class="slides">
+                    <img src="style/img_buildings/Photo_Khanqah_1.jpg" class="active" alt="Khanqah 1">
+                    <img src="style/img_buildings/Photo_Khanqah_2.jpg" class="active" alt="Khanqah 2">
+                    <img src="style/img_buildings/Photo_Khanqah_3.jpg" class="active" alt="Khanqah 3">
+                </div>
+
+                <button class="arrow-btn left" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="arrow-btn right" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
             </div>
 
             <div class="minaret-text-box">
-                <h3 class="minaret-subtitle">Short Historical Overview</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="overviewTitle">Short Historical Overview</h3>
+                <p class="minaret-text" data-key="overviewTextKhanqah">
                     Most of the time overlooked by tourists and locals, Khaqah is a 1920s building that served spiritual
                     retreat and gathering purposes. The building was not built to impress, and therefore it remains in a
                     shadow of other elements of the ensemble. 
                 </p>
 
-                <h3 class="minaret-subtitle">Structural Insights</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="structuralTitle">Structural Insights</h3>
+                <p class="minaret-text" data-key="structuralTextKhanqah">
                     The building was intentionally demurely constructed. The only fascinating feature of the
                     construction is a large domed chamber and thick inward-leaning walls. The interior of the building
                     is also modest, relying not on color but the geometry.
                 </p>
 
-                <h3 class="minaret-subtitle">Legends</h3>
-                <p class="minaret-text-last">
+                <h3 class="minaret-subtitle" data-key="legendsTitle">Legends</h3>
+                <p class="minaret-text-last" data-key="legendsTextKhanqah">
                     It is believed that everyone who enters Khanqah with a sincere heart and sits in silence will feel a
                     warm sensation of the sacred place.
                 </p>
@@ -128,7 +139,8 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin"
+                            src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -137,12 +149,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/khanqah.js"></script>
 </body>
 
 </html>

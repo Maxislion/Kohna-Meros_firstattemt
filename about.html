@@ -17,7 +17,7 @@
 
 <body>
 
-   <header>
+    <header>
         <div class="header-container">
             <nav class="header-nav">
                 <div class="left_side">
@@ -39,7 +39,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -56,7 +56,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -69,7 +69,7 @@
         <hr class="custom-line">
 
         <div class="who-we-are">
-            <h2>Who we are?</h2>
+            <h2 data-key="who-title">Who we are?</h2>
             <img src="style/img/team.png" alt="Team illustration" class="team-image">
             <div class="team-names">
                 <span>Nurmuhammad</span>
@@ -78,16 +78,17 @@
             </div>
             <hr class="custom-line">
 
-            <p>
+            <p data-key="who-text1">
                 We are team of three students from Uzbekistan. Inspired by the beauty of architecture, we designed
                 this website to share sense of appreciation to culture.
             </p>
-            <p>
+            <p data-key="who-text2">
                 Our project Kohna Meros presents historical buildings of Bukhara in 3D. We intent to make a great
                 impact on globalization and digitization of Uzbek culture.
             </p>
         </div>
     </section>
+
 
     <hr class="custom-line">
 
@@ -100,7 +101,7 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -109,13 +110,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
-
+    <script src="style/js/about.js"></script>
 </body>
 
 </html>

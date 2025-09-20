@@ -38,7 +38,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -55,7 +55,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -68,7 +68,7 @@
 
 
     <section class="minaret-section">
-        <h2 class="minaret-title">Ulughbek Madrassa</h2>
+        <h2 class="minaret-title" data-key="ulugbek-title">Ulughbek Madrassa</h2>
 
         <div class="minaret-content">
             <div class="minaret-model">
@@ -88,8 +88,8 @@
             </div>
 
             <div class="minaret-text-box">
-                <h3 class="minaret-subtitle">Short Historical Overview</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="ulugbek-overviewtitle">Short Historical Overview</h3>
+                <p class="minaret-text" data-key="ulugbek-overviewtext">
                     The Ulughbek Madrasah in Bukhara was built in 1417 by Ulughbek, the famous Timurid ruler,
                     astronomer, and scholar. It is one of the oldest madrasahs in Central Asia and part of a trio he
                     commissioned (others are in Samarkand and Gijduvan). Ulughbek aimed to create places where science
@@ -99,8 +99,8 @@
                     critical thinking.
                 </p>
 
-                <h3 class="minaret-subtitle">Structural Insights</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="ulugbek-structuraltitle">Structural Insights</h3>
+                <p class="minaret-text" data-key="ulugbek-structuraltext">
                     The madrasah has a symmetrical layout with a large central courtyard, surrounded by student rooms
                     (hujras), a lecture hall, and a mosque. The entrance is marked by a tall archway (iwan), covered
                     with glazed tile mosaics featuring stars, geometric shapes, and Kufic script—a reflection of
@@ -110,8 +110,8 @@
                     just to impress, but to inspire minds.
                 </p>
 
-                <h3 class="minaret-subtitle">Fun Fact</h3>
-                <p class="minaret-text-last">
+                <h3 class="minaret-subtitle" data-key="ulugbek-facttitle">Fun Fact</h3>
+                <p class="minaret-text-last" data-key="ulugbek-facttext">
                     Bukhara was facing a severe drought, and the Bolo-Hauz complex was built with the intention of
                     providing a water source for the people, making it a place for people to perform ablutions before
                     prayer. The reservoir, or "Khauz," was meant to be a practical solution to the water shortage. The
@@ -139,7 +139,7 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -148,12 +148,8 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/ulughbek-madrassa.js"></script>
+
 </body>
 
 </html>

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="header-container">
             <nav class="header-nav">
                 <div class="left_side">
@@ -38,7 +38,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -55,7 +55,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -68,15 +68,15 @@
 
 
     <section class="minaret-section">
-        <h2 class="minaret-title">Kalyan Mosque</h2>
+        <h2 class="minaret-title" data-key="kalyan_title">Kalyan Mosque</h2>
 
         <div class="minaret-content">
             <div class="minaret-model">
                 <model-viewer class="modelviewer" src="style/models/Abdullaziz_Khan.glb" ar
-                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"
-                    poster="style/models/poster/Kalyan-Mosque.webp" shadow-intensity="0"
-                    environment-image="style/models/poolbeg_4k.hdr" exposure="2"
-                    camera-orbit="-0.3947deg 88.82deg 2.585m" field-of-view="20.91deg">
+                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
+                    poster="style/models/poster/Abdullaziz_Khan.webp" shadow-intensity="0.4"
+                    environment-image="style/models/poolbeg_4k.hdr" exposure="1.7" camera-orbit="0deg 75deg 3.59m"
+                    field-of-view="26.26deg">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -88,25 +88,24 @@
             </div>
 
             <div class="minaret-text-box">
-                <h3 class="minaret-subtitle">Short Historical Overview</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="kalyan_overview_title">Short Historical Overview</h3>
+                <p class="minaret-text" data-key="kalyan_overview_text">
                     The main structure of Kalyan Mosque was laid in the 12th century but destroyed after some time
                     following the Mongolian invasions. Main modifications and retrofits were induced in the 1500s under
                     the rule of the Shaybanid dynasty, bringing it to the appearance that it bears now. The Mosque has
-                    been the main place for prayers for more than 500 years.
-
+                    been the main place for prayers for more than 500 years. 
                 </p>
 
-                <h3 class="minaret-subtitle">Structural Insights</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="kalyan_structural_title">Structural Insights</h3>
+                <p class="minaret-text" data-key="kalyan_structural_text">
                     As it is typical of buildings of that time, Kalyan Mosque is a structure built of adobe bricks. It
                     is in a rectangular shape in layout, with its courtyard housing a huge maksura room on the western
                     part. The perimeter of the courtyard is accompanied with pillar-doomed galleries, totalling 208
-                    pillars and 288 domes.
+                    pillars and 288 domes.  
                 </p>
 
-                <h3 class="minaret-subtitle">Legends</h3>
-                <p class="minaret-text-last">
+                <h3 class="minaret-subtitle" data-key="kalyan_funfact_title">Legends</h3>
+                <p class="minaret-text-last" data-key="kalyan_funfact_text">
                     There is a local belief that if one whispers something under the dome of the mosque, his or her
                     words will echo in a way that can be heard only by that very person.
                 </p>
@@ -132,7 +131,7 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -141,12 +140,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/kalyan-mosque.js"></script>
 </body>
 
 </html>

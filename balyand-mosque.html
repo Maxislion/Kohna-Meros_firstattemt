@@ -38,7 +38,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -55,7 +55,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -68,13 +68,15 @@
 
 
     <section class="minaret-section">
-        <h2 class="minaret-title">Balyand Mosque</h2>
+        <h2 class="minaret-title" data-key="balyand-title">Balyand Mosque</h2>
 
         <div class="minaret-content">
             <div class="minaret-model">
-                <model-viewer class="modelviewer" src="style/models/Balyand.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
-                    tone-mapping="agx" poster="style/models/poster/Balyand.webp" shadow-intensity="0" environment-image="style/models/poolbeg_4k.hdr"
-                    exposure="2" camera-orbit="-1.813deg 78.63deg 3.023m" field-of-view="26.26deg" shadow-softness="1">
+                <model-viewer class="modelviewer" src="style/models/Balyand.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="agx"
+                    poster="style/models/poster/Balyand.webp" shadow-intensity="0"
+                    environment-image="style/models/poolbeg_4k.hdr" exposure="2"
+                    camera-orbit="-1.813deg 78.63deg 3.023m" field-of-view="26.26deg" shadow-softness="1">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -95,9 +97,9 @@
             </div>
 
             <div class="minaret-text-box">
-                <h3 class="minaret-subtitle">Short Historical Overview</h3>
-                <p class="minaret-text">
-                     Dating back to the 16th century, the Balyand Mosque is a hidden treasure in Bukhara’s residential
+                <h3 class="minaret-subtitle" data-key="balyand-overview-title">Short Historical Overview</h3>
+                <p class="minaret-text" data-key="balyand-overview-text">
+                    Dating back to the 16th century, the Balyand Mosque is a hidden treasure in Bukhara’s residential
                     quarters. Its name (“High Mosque”) refers to its elevated foundation, possibly built over an older
                     structure. Unlike grand congregational mosques, it served a local community, offering a serene space
                     for prayer. The mosque reflects the Shaybanid era’s architectural style, blending functionality with
@@ -106,8 +108,8 @@
                     spiritual life in historic Bukhara, away from the grand monuments.
                 </p>
 
-                <h3 class="minaret-subtitle">Structural Insights</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="balyand-structure-title">Structural Insights</h3>
+                <p class="minaret-text" data-key="balyand-structure-text">
                     The mosque’s elevated platform enhances its presence and protects it from flooding. Its wooden aivan
                     (veranda) with carved columns is a standout feature, offering shade and ventilation. The prayer hall
                     has a mihrab decorated with floral motifs and Quranic inscriptions in delicate stucco. The ceiling
@@ -117,6 +119,7 @@
                     the surrounding residential fabric.
                 </p>
             </div>
+
 
             <div class="map-box">
                 <iframe class="iframe-google-maps"
@@ -139,7 +142,7 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -148,7 +151,7 @@
         </div>
     </footer>
 
-    <script src="style/js/script.js"></script>
+    <script src="style/js/balyand-mosque.js"></script>
 </body>
 
 </html>

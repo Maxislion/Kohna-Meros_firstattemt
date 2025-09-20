@@ -17,7 +17,7 @@
 
 <body>
 
-   <header>
+    <header>
         <div class="header-container">
             <nav class="header-nav">
                 <div class="left_side">
@@ -39,7 +39,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -56,7 +56,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -68,7 +68,7 @@
 
     <main>
         <section class="maps-section">
-            <h2 class="maps-title">Bukhara</h2>
+            <h2 data-key="bukhara" class="maps-title">Bukhara</h2>
             <hr class="custom-line-2">
             <div class="map-box">
                 <iframe class="iframe-google-maps"
@@ -79,31 +79,32 @@
         </section>
 
         <section class="links-section">
-            <h2 class="links-title">Monuments</h2>
+            <h2 data-key="monuments" class="links-title">Monuments</h2>
             <hr class="custom-line-3">
             <div class="links-grid">
-                <a href="abdullaziz-khan-madrassa.html">Abdullaziz‑Khan Madrassa</a>
-                <a href="alam-madrasa.html">A’lam Madrasa</a>
-                <a href="ark-fortress.html">Ark Fortress</a>
-                <a href="balyand-mosque.html">Balyand Mosque</a>
-                <a href="bolo-hauz-mosque.html">Bolo-Hauz Mosque</a>
-                <a href="chor-minor.html">Chor Minor</a>
-                <a href="domulla-hasan-madrasa.html">Domulla Hasan Madrasa</a>
-                <a href="govkushon_madrasa.html">Govkushon Madrasa & Mosque</a>
-                <a href="kalyan-mosque.html">Kalyan Mosque</a>
-                <a href="khanqah.html">Khanqah</a>
-                <a href="kukeldash-madrasah.html">Kukeldash Madrasah</a>
-                <a href="lab-i-hauz-pond.html">Lab-i Hauz Pond</a>
-                <a href="lyabi-hauz.html">Lyabi-Hauz</a>
-                <a href="magok‑i‑attari-mosque.html">Magok‑i‑Attari Mosque</a>
-                <a href="magoki_kurpa_mosque.html">Magok‑i‑Kurpa Mosque</a>
-                <a href="minaret-kalyan.html">Minaret Kalyan</a>
-                <a href="miri-arab-madrassa.html">Miri-Arab Madrassa</a>
-                <a href="nadir-divan-begi-madrasah.html">Nadir Divan Begi Madrasah</a>
-                <a href="shaybani‑period-trade-domes.html">Shaybani‑period Trade Domes</a>
-                <a href="ulughbek-madrassa.html">Ulughbek Madrassa</a>
+                <a data-key="abdullaziz" href="abdullaziz-khan-madrassa.html">Abdullaziz-Khan Madrassa</a>
+                <a data-key="alam" href="alam-madrasa.html">A’lam Madrasa</a>
+                <a data-key="ark" href="ark-fortress.html">Ark Fortress</a>
+                <a data-key="balyand" href="balyand-mosque.html">Balyand Mosque</a>
+                <a data-key="bolo" href="bolo-hauz-mosque.html">Bolo-Hauz Mosque</a>
+                <a data-key="chor" href="chor-minor.html">Chor Minor</a>
+                <a data-key="domulla" href="domulla-hasan-madrasa.html">Domulla Hasan Madrasa</a>
+                <a data-key="govkushon" href="govkushon_madrasa.html">Govkushon Madrasa & Mosque</a>
+                <a data-key="kalyan" href="kalyan-mosque.html">Kalyan Mosque</a>
+                <a data-key="khanqah" href="khanqah.html">Khanqah</a>
+                <a data-key="kukeldash" href="kukeldash-madrasah.html">Kukeldash Madrasah</a>
+                <a data-key="labi-pond" href="lab-i-hauz-pond.html">Lab-i Hauz Pond</a>
+                <a data-key="lyabi" href="lyabi-hauz.html">Lyabi-Hauz</a>
+                <a data-key="magoki-attari" href="magok‑i‑attari-mosque.html">Magok-i-Attari Mosque</a>
+                <a data-key="magoki-kurpa" href="magoki_kurpa_mosque.html">Magok-i-Kurpa Mosque</a>
+                <a data-key="minaret-kalyan" href="minaret-kalyan.html">Minaret Kalyan</a>
+                <a data-key="miri-arab" href="miri-arab-madrassa.html">Miri-Arab Madrassa</a>
+                <a data-key="nadir" href="nadir-divan-begi-madrasah.html">Nadir Divan Begi Madrasah</a>
+                <a data-key="shaybani" href="shaybani‑period-trade-domes.html">Shaybani-period Trade Domes</a>
+                <a data-key="ulughbek" href="ulughbek-madrassa.html">Ulughbek Madrassa</a>
             </div>
         </section>
+
     </main>
 
     <hr class="custom-line">
@@ -117,7 +118,7 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -126,12 +127,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/architecture.js"></script>
 
 </body>
 

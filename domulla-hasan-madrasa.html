@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="header-container">
             <nav class="header-nav">
                 <div class="left_side">
@@ -38,7 +38,7 @@
                         <!-- <li><a href="#">Stories</a></li> -->
                         <li>
                             <select id="languageSwitcherDesktop">
-                                <option value="" selected disabled>Languages:</option>
+                                <option value="" selected disabled>Language</option>
                                 <option value="en">English</option>
                                 <option value="uz">Oʻzbek</option>
                             </select>
@@ -55,7 +55,7 @@
                 <a href="about.html">Contact</a>
                 <!-- <a href="#">Stories</a> -->
                 <select id="languageSwitcherMobile">
-                    <option value="" selected disabled>Languages:</option>
+                    <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
                     <option value="uz">Oʻzbek</option>
                 </select>
@@ -68,15 +68,13 @@
 
 
     <section class="minaret-section">
-        <h2 class="minaret-title">Domulla Hasan Madrasa</h2>
+        <h2 class="minaret-title" data-key="domullaTitle">Domulla Hasan Madrasa</h2>
 
         <div class="minaret-content">
             <div class="minaret-model">
-                <model-viewer class="modelviewer" src="style/models/Domulla_Hasan_Madrasa.glb" ar
-                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"
-                    poster="style/models/poster/Domulla_Hasan_Madrasa.webp" shadow-intensity="0"
-                    environment-image="style/models/fada.hdr" exposure="1.79" shadow-softness="1"
-                    camera-orbit="-0.3947deg 86.45deg 2.816m" field-of-view="22.98deg">
+                <model-viewer class="modelviewer" src="style/models/Domulla_Hasan_Madrasa.glb" ar ar-modes="webxr scene-viewer quick-look"
+                    camera-controls tone-mapping="aces" poster="style/models/poster/Domulla_Hasan_Madrasa.webp" shadow-intensity="1"
+                    environment-image="style/models/citrus_orchard_road_puresky_4k.hdr" exposure="1.37" camera-orbit="0deg 75deg 3.535m" field-of-view="26.26deg">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -84,12 +82,11 @@
                         <img src="ar_hand_prompt.png">
                     </div>
                 </model-viewer>
-
             </div>
 
             <div class="minaret-text-box">
-                <h3 class="minaret-subtitle">Short Historical Overview</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="overviewTitle">Short Historical Overview</h3>
+                <p class="minaret-text" data-key="domullaOverview">
                     Built in the late 16th century, the Domulla Hasan Madrasa is linked to a prominent Islamic jurist.
                     It served as a school for theology and law during the Shaybanid dynasty’s rule. Unlike grander
                     madrasas, it emphasized intimate study circles, fostering deep scholarly debates. Over time, it
@@ -99,8 +96,8 @@
                     as a quiet testament to Bukhara’s scholarly past.
                 </p>
 
-                <h3 class="minaret-subtitle">Structural Insights</h3>
-                <p class="minaret-text">
+                <h3 class="minaret-subtitle" data-key="structureTitle">Structural Insights</h3>
+                <p class="minaret-text" data-key="domullaStructure">
                     The madrasa’s design is compact, with a single-story layout around a small courtyard. Its brick
                     façade includes a recessed entrance with minimal tilework, focusing on geometric brick patterns. The
                     hujras (cells) feature arched doorways and small windows for natural light. The prayer hall has a
@@ -110,12 +107,13 @@
                     functional yet beautiful architecture of late medieval Bukhara.
                 </p>
 
-                <h3 class="minaret-subtitle">Fun Fact</h3>
-                <p class="minaret-text-last">
+                <h3 class="minaret-subtitle" data-key="funfactTitle">Fun Fact</h3>
+                <p class="minaret-text-last" data-key="domullaFunFact">
                     After the Soviet era, the madrasa was repurposed, and in the 2010s was restored as a cultural and
                     tourist facility, with ground-floor rooms used as shops.
                 </p>
             </div>
+
             <div class="map-box">
                 <iframe class="iframe-google-maps"
                     src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d182.17276724261802!2d64.42240143411216!3d39.77351881832289!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDQ2JzI0LjciTiA2NMKwMjUnMjAuOSJF!5e1!3m2!1sen!2s!4v1757431945314!5m2!1sen!2s"
@@ -137,7 +135,8 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="#"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin"
+                            src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>
@@ -146,12 +145,7 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('show');
-        }
-    </script>
+    <script src="style/js/domulla-hasan-madrasa.js"></script>
 </body>
 
 </html>
