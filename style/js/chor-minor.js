@@ -11,7 +11,12 @@ const translations = {
     chor_structural_title: "Structural Insights",
     chor_structural_text: "Chor Minor’s four turquoise-domed towers (only two are true minarets) rise from a square base, each decorated with unique tile patterns symbolizing different religions or philosophies. The central dome covers a small prayer room. The towers’ hollow interiors have narrow staircases, but only one leads to a viewpoint. The brickwork is adorned with geometric and floral motifs, while the colored tiles reflect 19th-century Bukharan craftsmanship. Despite its ornamental appearance, the structure is sturdy, with thick walls and balanced proportions. Its unconventional design makes it a fascinating departure from traditional Islamic architecture.",
     chor_funfact_title: "Fun Fact",
-    chor_funfact_text: "The legend says that each minaret was dedicated to one of the merchant’s daughters. Thus, the decoration of each tower differs, representing four daughters’ personalities."
+    chor_funfact_text: "The legend says that each minaret was dedicated to one of the merchant’s daughters. Thus, the decoration of each tower differs, representing four daughters’ personalities.",
+        navHome: "Home",
+        navMissions: "Missions",
+        navArchitecture: "Architecture",
+        navContact: "Contact",
+        footerQuote: "“Heritage is our legacy from the past, what we live with today, and what we pass on to future generations. Our cultural and natural heritage are both irreplaceable sources of life and inspiration.” - UNESCO (World Heritage)"
   },
   uz: {
     chor_title: "Chor Minor",
@@ -20,7 +25,12 @@ const translations = {
     chor_structural_title: "Tuzilish Tafsilotlari",
     chor_structural_text: "Chor Minorning to'rtta firuza gumbazli minoralari (faqat ikkitasi haqiqiy minoralar) kvadrat asosdan ko'tarilib, har biri turli dinlar yoki falsafalarni ifodalovchi noyob koshin naqshlari bilan bezatilgan. Markaziy gumbaz kichik namozxonani qoplaydi. Minoralarning ichi bo'sh ichki qismida tor zinapoyalar mavjud, ammo faqat bittasi nuqtai nazarga olib keladi. G‘ishtdan yasalgan buyumlar geometrik va o‘simlik naqshlari bilan bezatilgan bo‘lsa, rangli koshinlar 19-asr Buxoro hunarmandchiligini aks ettiradi. O'zining bezakli ko'rinishiga qaramasdan, struktura mustahkam, qalin devorlar va muvozanatli nisbatlarga ega. Uning noan'anaviy dizayni uni an'anaviy islom arxitekturasidan hayratlanarli tarzda tark etadi.",
     chor_funfact_title: "Qiziqarli Fakt",
-    chor_funfact_text: "Afsonaga ko'ra, har bir minora savdogarning qizlaridan biriga bag'ishlangan. Shunday qilib, har bir minoraning bezaklari har xil bo'lib, to'rt nafar qizning shaxsiyatini ifodalaydi."
+    chor_funfact_text: "Afsonaga ko'ra, har bir minora savdogarning qizlaridan biriga bag'ishlangan. Shunday qilib, har bir minoraning bezaklari har xil bo'lib, to'rt nafar qizning shaxsiyatini ifodalaydi.",
+        navHome: "Bosh sahifa",
+        navMissions: "Maqsadlarimiz",
+        navArchitecture: "Arxitektura",
+        navContact: "Aloqa",
+        footerQuote: "“Meros — bu o‘tmishdan qolgan, bugun biz bilan yashayotgan, va kelajak avlodlarga qoldiradigan boyligimizdir. Bizning madaniy va tabiiy merosimiz hayot va ilhomning almashtirib bo‘lmaydigan manbalaridir.” - UNESCO (Butunjahon merosi)"
   }
 };
 
@@ -48,3 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slides img");
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) slide.classList.add("active");
+  });
+}
+
+function moveSlide(step) {
+  currentSlide = (currentSlide + step + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Auto-slide every 5s
+setInterval(() => {
+  moveSlide(1);
+}, 3000);

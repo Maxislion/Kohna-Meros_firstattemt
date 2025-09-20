@@ -12,7 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
       structureTitle: "Structural Insights",
       structureText: "The structure is grand and richly detailed. The entrance portal is massive, with bright mosaic tiles, floral patterns, and intricate calligraphy that rise toward the sky. Inside, the courtyard is wide, surrounded by student rooms, prayer halls, and lecture spaces. The ceiling of the mosque chamber is especially stunning, painted with gold and deep blue in complex patterns. The building uses the most refined tilework in Bukhara. Its design is more theatrical than earlier madrasahs—made to impress. Every part of the structure seems to say: “Look what we can build.”",
       funFactTitle: "Fun Fact",
-      funFactText: "The decoration of the madrassah is not finished as the ruler was dethroned before the end of the construction work. The project was terminated by the architect with the rise of a new ruling."
+      funFactText: "The decoration of the madrassah is not finished as the ruler was dethroned before the end of the construction work. The project was terminated by the architect with the rise of a new ruling.",
+
+      // new
+      navHome: "Home",
+      navMissions: "Missions",
+      navArchitecture: "Architecture",
+      navContact: "Contact",
+      footerQuote: "“Heritage is our legacy from the past, what we live with today, and what we pass on to future generations. Our cultural and natural heritage are both irreplaceable sources of life and inspiration.” - UNESCO (World Heritage)"
     },
     uz: {
       title: "Abdullazizxon Madrasasi",
@@ -21,7 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
       structureTitle: "Tuzilish Tafsilotlari",
       structureText: "Tuzilishi katta va boy tafsilotlarga ega. Kirish portali massiv bo'lib, yorqin mozaik plitalar, gul naqshlari va osmonga ko'tarilgan murakkab xattotlik bilan bezatilgan. Ichkarida hovli keng, atrofi talabalar xonalari, namozxonlar, ma’ruza xonalari bilan o‘ralgan. Masjid xonasining shifti, ayniqsa, hayratlanarli, murakkab naqshlarda oltin va chuqur ko'k rangga bo'yalgan. Binoda Buxorodagi eng nafis koshinlardan foydalanilgan. Uning dizayni avvalgi madrasalardan ko'ra ko'proq teatrlashtirilgan - taassurot qoldirish uchun qilingan. Tuzilishning har bir qismi: “Qarang, biz nima qurishimiz mumkin”, deganga o‘xshaydi.",
       funFactTitle: "Qiziqarli Fakt",
-      funFactText: "Hukmdor qurilish ishlari tugamasdan taxtdan tushirilgani uchun madrasani bezash tugallanmagan. Loyiha arxitektor tomonidan yangi qarorning ko‘tarilishi bilan tugatildi."
+      funFactText: "Hukmdor qurilish ishlari tugamasdan taxtdan tushirilgani uchun madrasani bezash tugallanmagan. Loyiha arxitektor tomonidan yangi qarorning ko‘tarilishi bilan tugatildi.",
+
+      // new
+      navHome: "Bosh sahifa",
+      navMissions: "Maqsadlarimiz",
+      navArchitecture: "Arxitektura",
+      navContact: "Aloqa",
+      footerQuote: "“Meros — bu o‘tmishdan qolgan, bugun biz bilan yashayotgan, va kelajak avlodlarga qoldiradigan boyligimizdir. Bizning madaniy va tabiiy merosimiz hayot va ilhomning almashtirib bo‘lmaydigan manbalaridir.” - UNESCO (Butunjahon merosi)"
     }
   };
 
@@ -36,6 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const funFactTitle = document.querySelectorAll(".minaret-subtitle")[2];
   const funFactText = document.querySelector(".minaret-text-last");
 
+  // new selectors
+  const navLinks = document.querySelectorAll(".header-nav .left_nav ul li a, .mobile-nav a");
+  const footerQuote = document.querySelector(".footer-quote");
+
   function updateLanguage(lang) {
     const t = translations[lang];
     title.textContent = t.title;
@@ -45,6 +63,15 @@ document.addEventListener("DOMContentLoaded", function () {
     structureText.textContent = t.structureText;
     funFactTitle.textContent = t.funFactTitle;
     funFactText.textContent = t.funFactText;
+
+    // nav
+    navLinks[0].textContent = t.navHome;
+    navLinks[1].textContent = t.navMissions;
+    navLinks[2].textContent = t.navArchitecture;
+    navLinks[3].textContent = t.navContact;
+
+    // footer
+    footerQuote.textContent = t.footerQuote;
   }
 
   function syncLanguage(lang) {
@@ -52,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
     langMobile.value = lang;
     updateLanguage(lang);
   }
-
 
   langDesktop.addEventListener("change", function () {
     syncLanguage(this.value);
@@ -78,7 +104,7 @@ function moveSlide(step) {
   showSlide(currentSlide);
 }
 
-// Auto-slide every 5s
+// Auto-slide every 3s
 setInterval(() => {
   moveSlide(1);
 }, 3000);

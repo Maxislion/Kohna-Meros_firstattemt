@@ -11,7 +11,12 @@ const translations = {
     structuralTitle: "Structural Insights",
     structuralTextKhanqah: "The building was intentionally demurely constructed. The only fascinating feature of the construction is a large domed chamber and thick inward-leaning walls. The interior of the building is also modest, relying not on color but the geometry.",
     legendsTitle: "Legends",
-    legendsTextKhanqah: "It is believed that everyone who enters Khanqah with a sincere heart and sits in silence will feel a warm sensation of the sacred place."
+    legendsTextKhanqah: "It is believed that everyone who enters Khanqah with a sincere heart and sits in silence will feel a warm sensation of the sacred place.",
+    navHome: "Home",
+    navMissions: "Missions",
+    navArchitecture: "Architecture",
+    navContact: "Contact",
+    footerQuote: "“Heritage is our legacy from the past, what we live with today, and what we pass on to future generations. Our cultural and natural heritage are both irreplaceable sources of life and inspiration.” - UNESCO (World Heritage)"
   },
   uz: {
     khanqahTitle: "Xonqah",
@@ -20,7 +25,12 @@ const translations = {
     structuralTitle: "Tuzilish Tafsilotlari",
     structuralTextKhanqah: "Bino qasddan kamtarona tarzda qurilgan. Qurilishning yagona qiziqarli jihati katta gumbazli xona va ichkariga og‘ilgan qalin devorlardir. Ichki qismi ham sodda bo‘lib, rang emas, balki geometriyaga tayanadi.",
     legendsTitle: "Afsonalar",
-    legendsTextKhanqah: "Xonqaga chin yurakdan kirib, sukunatda o‘tirgan har bir kishi muqaddas dargohning iliq tuyg‘usini his qiladi, deb ishoniladi."
+    legendsTextKhanqah: "Xonqaga chin yurakdan kirib, sukunatda o‘tirgan har bir kishi muqaddas dargohning iliq tuyg‘usini his qiladi, deb ishoniladi.",
+    navHome: "Bosh sahifa",
+    navMissions: "Maqsadlarimiz",
+    navArchitecture: "Arxitektura",
+    navContact: "Aloqa",
+    footerQuote: "“Meros — bu o‘tmishdan qolgan, bugun biz bilan yashayotgan, va kelajak avlodlarga qoldiradigan boyligimizdir. Bizning madaniy va tabiiy merosimiz hayot va ilhomning almashtirib bo‘lmaydigan manbalaridir.” - UNESCO (Butunjahon merosi)"
   }
 };
 
@@ -42,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sw.addEventListener("change", e => {
         setLanguage(e.target.value);
         switchers.forEach(other => {
-          if (other && other !== sw) other.value = e.target.value; 
+          if (other && other !== sw) other.value = e.target.value;
         });
       });
     }

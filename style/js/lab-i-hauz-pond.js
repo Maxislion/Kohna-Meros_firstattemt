@@ -13,7 +13,12 @@ const translations = {
     funfacttitle: "Fun Fact",
     funfacttext: "Legends say that the pond was constructed on the site of a Jewish widow’s house without her approval. A woman was desperate and cursed the pond, and there had been at least one case of drowning each year.",
     tourtitle: "Tour Tips",
-    tourtext: "Best seen at sunset when the brickwork glows golden. Nearby: Mir-i-Arab Madrasa, Toki Zargaron dome bazaar."
+    tourtext: "Best seen at sunset when the brickwork glows golden. Nearby: Mir-i-Arab Madrasa, Toki Zargaron dome bazaar.",
+    navHome: "Home",
+    navMissions: "Missions",
+    navArchitecture: "Architecture",
+    navContact: "Contact",
+    footerQuote: "“Heritage is our legacy from the past, what we live with today, and what we pass on to future generations. Our cultural and natural heritage are both irreplaceable sources of life and inspiration.” - UNESCO (World Heritage)"
   },
   uz: {
     title: "Lab-i Hauz hovuzi",
@@ -24,7 +29,12 @@ const translations = {
     funfacttitle: "Qiziqarli Fakt",
     funfacttext: "Afsonalarga ko'ra, hovuz yahudiy beva ayolning uyi o'rnida uning roziligisiz qurilgan. Bu ayol umidsiz edi va hovuzni la'natladi, shu sababdan har yili kamida bir marta cho'kish holati bo'lgan.",
     tourtitle: "Sayohat Maslahatlari",
-    tourtext: "Eng yaxshi quyosh botganda, g'isht ishlari oltin rangda porlaganda ko'rinadi. Yaqin atrofda: Mir Arab madrasasi, Toki Zargaron gumbaz bozori."
+    tourtext: "Eng yaxshi quyosh botganda, g'isht ishlari oltin rangda porlaganda ko'rinadi. Yaqin atrofda: Mir Arab madrasasi, Toki Zargaron gumbaz bozori.",
+    navHome: "Bosh sahifa",
+    navMissions: "Maqsadlarimiz",
+    navArchitecture: "Arxitektura",
+    navContact: "Aloqa",
+    footerQuote: "“Meros — bu o‘tmishdan qolgan, bugun biz bilan yashayotgan, va kelajak avlodlarga qoldiradigan boyligimizdir. Bizning madaniy va tabiiy merosimiz hayot va ilhomning almashtirib bo‘lmaydigan manbalaridir.” - UNESCO (Butunjahon merosi)"
   }
 };
 
@@ -46,9 +56,29 @@ document.addEventListener("DOMContentLoaded", () => {
       sw.addEventListener("change", e => {
         setLanguage(e.target.value);
         switchers.forEach(other => {
-          if (other && other !== sw) other.value = e.target.value; 
+          if (other && other !== sw) other.value = e.target.value;
         });
       });
     }
   });
 });
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slides img");
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) slide.classList.add("active");
+  });
+}
+
+function moveSlide(step) {
+  currentSlide = (currentSlide + step + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Auto-slide every 5s
+setInterval(() => {
+  moveSlide(1);
+}, 3000);

@@ -26,7 +26,12 @@ const translations = {
     "miri-arab": "Miri-Arab Madrassa",
     nadir: "Nadir Divan Begi Madrasah",
     shaybani: "Shaybani-period Trade Domes",
-    ulughbek: "Ulughbek Madrassa"
+    ulughbek: "Ulughbek Madrassa",
+    navHome: "Home",
+    navMissions: "Missions",
+    navArchitecture: "Architecture",
+    navContact: "Contact",
+    footerQuote: "“Heritage is our legacy from the past, what we live with today, and what we pass on to future generations. Our cultural and natural heritage are both irreplaceable sources of life and inspiration.” - UNESCO (World Heritage)"
   },
   uz: {
     bukhara: "Buxoro",
@@ -50,7 +55,12 @@ const translations = {
     "miri-arab": "Mir Arab madrasasi",
     nadir: "Nodir Devonbegi madrasasi",
     shaybani: "Shayboniy davri savdo gumbazlari",
-    ulughbek: "Ulug‘bek madrasasi"
+    ulughbek: "Ulug‘bek madrasasi",
+    navHome: "Bosh sahifa",
+    navMissions: "Maqsadlarimiz",
+    navArchitecture: "Arxitektura",
+    navContact: "Aloqa",
+    footerQuote: "“Meros — bu o‘tmishdan qolgan, bugun biz bilan yashayotgan, va kelajak avlodlarga qoldiradigan boyligimizdir. Bizning madaniy va tabiiy merosimiz hayot va ilhomning almashtirib bo‘lmaydigan manbalaridir.” - UNESCO (Butunjahon merosi)"
   }
 };
 

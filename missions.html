@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Missions</title>
+    <link rel="icon" href="style/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style/css/missions.css">
+    <link rel="stylesheet" href="style/css/base-responsive.css">
+    <link rel="stylesheet" href="style/css/missions-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <nav class="header-nav">
+                <div class="left_side">
+                    <div class="logo">
+                        <a href="index.html"><img src="style/img/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+
+                <div class="burger" onclick="toggleMobileMenu()">
+                    &#9776;
+                </div>
+
+                <div class="left_nav" id="mainMenu">
+                    <ul>
+                        <li><a href="index.html" data-key="navHome">Home</a></li>
+                        <li><a href="missions.html" data-key="navMissions">Missions</a></li>
+                        <li><a href="architecture.html" data-key="navArchitecture">Architecture</a></li>
+                        <li><a href="about.html" data-key="navContact">Contact</a></li>
+                        <li>
+                            <select id="languageSwitcherDesktop">
+                                <option value="" selected disabled>Language</option>
+                                <option value="en">English</option>
+                                <option value="uz">Oʻzbek</option>
+                            </select>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobile-nav" id="mobileMenu">
+                <a href="index.html" data-key="navHome">Home</a>
+                <a href="missions.html" data-key="navMissions">Missions</a>
+                <a href="architecture.html" data-key="navArchitecture">Architecture</a>
+                <a href="about.html" data-key="navContact">Contact</a>
+                <select id="languageSwitcherMobile">
+                    <option value="" selected disabled>Language</option>
+                    <option value="en">English</option>
+                    <option value="uz">Oʻzbek</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <hr class="custom-line">
+
+
+    <section class="missions">
+        <h2 class="missions-title" data-key="missionsTitle">Our Missions</h2>
+        <hr class="custom-line-2">
+        <div class="missions-grid">
+
+            <div class="mission-item">
+                <h3 data-key="preservationTitle">Preservation</h3>
+                <img src="style/img/Preservation.png" alt="Preservation">
+                <p data-key="preservationText">
+                    We strive to protect and safeguard our cultural heritage, ensuring translation of cultural beauty
+                    for
+                    future generations.
+                </p>
+            </div>
+
+            <div class="mission-item">
+                <h3 data-key="digitizationTitle">Digitization</h3>
+                <img src="style/img/Digitization.png" alt="Digitization">
+                <p data-key="digitizationText">
+                    We bring monuments to the computer world, modeling architecture in three-dimensions, and
+                    making history digitally accessible.
+                </p>
+            </div>
+
+            <div class="mission-item">
+                <h3 data-key="appreciationTitle">Appreciation</h3>
+                <img src="style/img/Appreciation.png" alt="Appreciation">
+                <p data-key="appreciationText">
+                    We intend to raise global awareness and deep cultural appreciation in people for the cultural
+                    heritage of Uzbek nation and Asia.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <hr class="custom-line">
+
+    <footer class="footer">
+        <p class="footer-quote" data-key="footerQuote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+            to future generations. Our cultural and natural heritage are both irreplaceable sources of life
+            and inspiration.” - UNESCO (World Heritage)</p>
+
+        <div class="footer-bottom">
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin"
+                            src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                </div>
+                <div class="footer-copy">
+                    © 2025 <span>Kohna Meros</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="style/js/missions.js"></script>
+
+</body>
+
+</html>

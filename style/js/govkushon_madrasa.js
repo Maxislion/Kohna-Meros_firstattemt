@@ -11,7 +11,12 @@ const translations = {
     structureTitle: "Tuzilish Tafsilotlari",
     gaukushonStructure: "Gaukushon masjidi madrasasi joylashuvi jihatidan assimetrik bo‘lib, boshqa madrashlardan shu jihati bilan ajralib turadi. Masjid minorasi deyarli 20 metr balandlikda bo'lib, shahar bo'ylab namozxonlarni chaqirishga yordam beradi. Chap tomonda joylashgan ayvon Sovet davrida bir necha bor ta'mirlangan. Binolar 16-asrga xos bezak bilan pishgan g'ishtdan qurilgan. Murakkab plitkalar o'rniga simmetriya, muvozanat va ravshanlikka e'tibor qaratiladi. Namoz zali salqin va soyali, madrasaning hovlisida bir qavatli talabalar xonalari va dars xonalari mavjud. Birgalikda ular amaliy nafislikni aks ettiradi - kuchli, foydali va keraksiz chaqnashsiz ma'naviy, xuddi o'sha paytdagi shahar xarakteriga o'xshaydi.",
     funfactTitle: "Qiziqarli Fakt",
-    gaukushonFunFact: "Sayyohlar ko'pincha ramziy o'zgarishlar haqida o'ylashadi: bir vaqtlar so'yish uchun foydalanilgan joy shaharning ma'naviy va ma'rifiy markaziga aylandi."
+    gaukushonFunFact: "Sayyohlar ko'pincha ramziy o'zgarishlar haqida o'ylashadi: bir vaqtlar so'yish uchun foydalanilgan joy shaharning ma'naviy va ma'rifiy markaziga aylandi.",
+    navHome: "Bosh sahifa",
+    navMissions: "Maqsadlarimiz",
+    navArchitecture: "Arxitektura",
+    navContact: "Aloqa",
+    footerQuote: "“Meros — bu o‘tmishdan qolgan, bugun biz bilan yashayotgan, va kelajak avlodlarga qoldiradigan boyligimizdir. Bizning madaniy va tabiiy merosimiz hayot va ilhomning almashtirib bo‘lmaydigan manbalaridir.” - UNESCO (Butunjahon merosi)"
   },
   en: {
     gaukushonTitle: "Govkushon Madrasa & Mosque",
@@ -20,7 +25,12 @@ const translations = {
     structureTitle: "Structural Insights",
     gaukushonStructure: "The Gaukushon Mosque and Madrasah are built in a harmonious, rectangular layout, with a spacious courtyard in between. The mosque’s minaret is one of the tallest in Bukhara after the Kalyan Minaret, helping call worshippers across the city. The buildings are made from baked brick, with decoration typical for the 16th century. Instead of elaborate tilework, the focus is on symmetry, balance, and clarity. The prayer hall is cool and shaded, while the madrasah features student rooms and lecture spaces. Together, they reflect practical elegance — strong, useful, and spiritual without unnecessary flash, much like the city’s character at the time.",
     funfactTitle: "Fun Fact",
-    gaukushonFunFact: "Visitors often reflect on the symbolic transformation: a place once used for slaughter evolving into a spiritual and educational heart of the city."
+    gaukushonFunFact: "Visitors often reflect on the symbolic transformation: a place once used for slaughter evolving into a spiritual and educational heart of the city.",
+    navHome: "Home",
+    navMissions: "Missions",
+    navArchitecture: "Architecture",
+    navContact: "Contact",
+    footerQuote: "“Heritage is our legacy from the past, what we live with today, and what we pass on to future generations. Our cultural and natural heritage are both irreplaceable sources of life and inspiration.” - UNESCO (World Heritage)"
   }
 };
 
@@ -42,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sw.addEventListener("change", e => {
         setLanguage(e.target.value);
         switchers.forEach(other => {
-          if (other && other !== sw) other.value = e.target.value; 
+          if (other && other !== sw) other.value = e.target.value;
         });
       });
     }

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="header-container">
             <nav class="header-nav">
                 <div class="left_side">
@@ -31,11 +31,10 @@
 
                 <div class="left_nav" id="mainMenu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <!-- <li><a href="">Mission</a></li> -->
-                        <li><a href="architecture.html">Architecture</a></li>
-                        <li><a href="about.html">Contact</a></li>
-                        <!-- <li><a href="#">Stories</a></li> -->
+                        <li><a href="index.html" data-key="navHome">Home</a></li>
+                        <li><a href="missions.html" data-key="navMissions">Missions</a></li>
+                        <li><a href="architecture.html" data-key="navArchitecture">Architecture</a></li>
+                        <li><a href="about.html" data-key="navContact">Contact</a></li>
                         <li>
                             <select id="languageSwitcherDesktop">
                                 <option value="" selected disabled>Language</option>
@@ -49,11 +48,10 @@
             </nav>
 
             <div class="mobile-nav" id="mobileMenu">
-                <a href="index.html">Home</a>
-                <!-- <a href="">Mission</a> -->
-                <a href="architecture.html">Architecture</a>
-                <a href="about.html">Contact</a>
-                <!-- <a href="#">Stories</a> -->
+                <a href="index.html" data-key="navHome">Home</a>
+                <a href="missions.html" data-key="navMissions">Missions</a>
+                <a href="architecture.html" data-key="navArchitecture">Architecture</a>
+                <a href="about.html" data-key="navContact">Contact</a>
                 <select id="languageSwitcherMobile">
                     <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
@@ -72,11 +70,10 @@
 
         <div class="minaret-content">
             <div class="minaret-model">
-                <model-viewer class="modelviewer" src="style/models/Nadir Divan Begi.glb" ar
-                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
-                    poster="style/models/poster/Nadir-Divan-Begi.webp" shadow-intensity="0" exposure="2"
-                    shadow-softness="1" environment-image="style/models/fada.hdr"
-                    camera-orbit="1.579deg 88.42deg 3.528m" field-of-view="22.98deg">
+                <model-viewer class="modelviewer" src="style/models/Nadir Divan Begi Madrasah.glb" ar ar-modes="webxr scene-viewer quick-look"
+                    camera-controls tone-mapping="aces" poster="style/models/poster/Nadir-Divan-Begi.webp" shadow-intensity="1"
+                    environment-image="style/models/poolbeg_4k.hdr" exposure="2" camera-orbit="0deg 75deg 4.74m"
+                    field-of-view="26.26deg">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -84,6 +81,17 @@
                         <img src="ar_hand_prompt.png">
                     </div>
                 </model-viewer>
+
+                <div class="photo-slider">
+                    <div class="slides">
+                        <img src="style/img_buildings/nadir-divan-begi1.jpg" class="active" alt="Nadir-divan-begi 1">
+                        <img src="style/img_buildings/nadir-divan-begi2.png" alt="Nadir-divan-begi 2">
+                        <img src="style/img_buildings/nadir-divan-begi3.jpg" alt="Nadir-divan-begi 3">
+                    </div>
+
+                    <button class="arrow-btn left" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="arrow-btn right" onclick="moveSlide(1)">&#10095;</button>
+                </div>
 
             </div>
 
@@ -128,7 +136,7 @@
 
 
     <footer class="footer">
-        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+        <p class="footer-quote" data-key="footerQuote">“Heritage is our legacy from the past, what we live with today, and what we pass on
             to future generations. Our cultural and natural heritage are both irreplaceable sources of life
             and inspiration.” - UNESCO (World Heritage)</p>
 
@@ -136,7 +144,8 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin"
+                            src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>

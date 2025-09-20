@@ -31,11 +31,10 @@
 
                 <div class="left_nav" id="mainMenu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <!-- <li><a href="">Mission</a></li> -->
-                        <li><a href="architecture.html">Architecture</a></li>
-                        <li><a href="about.html">Contact</a></li>
-                        <!-- <li><a href="#">Stories</a></li> -->
+                        <li><a href="index.html" data-key="navHome">Home</a></li>
+                        <li><a href="missions.html" data-key="navMissions">Missions</a></li>
+                        <li><a href="architecture.html" data-key="navArchitecture">Architecture</a></li>
+                        <li><a href="about.html" data-key="navContact">Contact</a></li>
                         <li>
                             <select id="languageSwitcherDesktop">
                                 <option value="" selected disabled>Language</option>
@@ -49,11 +48,10 @@
             </nav>
 
             <div class="mobile-nav" id="mobileMenu">
-                <a href="index.html">Home</a>
-                <!-- <a href="">Mission</a> -->
-                <a href="architecture.html">Architecture</a>
-                <a href="about.html">Contact</a>
-                <!-- <a href="#">Stories</a> -->
+                <a href="index.html" data-key="navHome">Home</a>
+                <a href="missions.html" data-key="navMissions">Missions</a>
+                <a href="architecture.html" data-key="navArchitecture">Architecture</a>
+                <a href="about.html" data-key="navContact">Contact</a>
                 <select id="languageSwitcherMobile">
                     <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
@@ -73,8 +71,10 @@
         <div class="minaret-content">
             <div class="minaret-model">
                 <model-viewer class="modelviewer" src="style/models/Bolo Hauz.glb" ar
-                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="style/models/poster/Bolo-Hauz-Mosque.webp"
-                    shadow-intensity="1" camera-orbit="0deg 75deg 5.367m" field-of-view="30deg">
+                    ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"
+                    poster="style/models/poster/Bolo-Hauz-Mosque.webp" shadow-intensity="1"
+                    environment-image="style/models/citrus_orchard_road_puresky_4k.hdr" exposure="1.27"
+                    camera-orbit="0deg 75deg 6.294m" field-of-view="26.26deg">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -83,6 +83,18 @@
                     </div>
                 </model-viewer>
             </div>
+
+            <div class="photo-slider">
+                <div class="slides">
+                    <img src="style/img_buildings/Photo_BoloHauz1.jpg" class="active" alt="BoloHauz 1">
+                    <img src="style/img_buildings/Photo_BoloHauz2.jpg" alt="BoloHauz 2">
+                    <img src="style/img_buildings/Photo_BoloHauz3.png" alt="BoloHauz 3">
+                </div>
+
+                <button class="arrow-btn left" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="arrow-btn right" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
 
             <div class="minaret-text-box">
                 <h3 class="minaret-subtitle" data-key="bolo_overview_title">Short Historical Overview</h3>
@@ -124,7 +136,8 @@
 
 
     <footer class="footer">
-        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+        <p class="footer-quote" data-key="footerQuote">“Heritage is our legacy from the past, what we live with today,
+            and what we pass on
             to future generations. Our cultural and natural heritage are both irreplaceable sources of life
             and inspiration.” - UNESCO (World Heritage)</p>
 

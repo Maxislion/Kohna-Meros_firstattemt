@@ -1,0 +1,55 @@
+@media (max-width: 1200px) {
+    .missions {
+        max-width: none;
+    }
+
+    .missions-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .mission-item {
+        max-width: 600px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mission-item {
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .missions-title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 480px) {
+    .missions {
+        margin: 15px auto 50px;
+    }
+
+    .mission-item {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .mission-item img {
+        height: 150px;
+    }
+
+    .missions-title {
+        font-size: 35px;
+    }
+
+    .custom-line-2 {
+        width: 65%;
+        height: 1.5px;
+        margin: 15px auto 30px auto;
+    }
+
+    .mission-item p {
+        font-size: 13px;
+    }
+}

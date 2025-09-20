@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="header-container">
             <nav class="header-nav">
                 <div class="left_side">
@@ -31,11 +31,10 @@
 
                 <div class="left_nav" id="mainMenu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <!-- <li><a href="">Mission</a></li> -->
-                        <li><a href="architecture.html">Architecture</a></li>
-                        <li><a href="about.html">Contact</a></li>
-                        <!-- <li><a href="#">Stories</a></li> -->
+                        <li><a href="index.html" data-key="navHome">Home</a></li>
+                        <li><a href="missions.html" data-key="navMissions">Missions</a></li>
+                        <li><a href="architecture.html" data-key="navArchitecture">Architecture</a></li>
+                        <li><a href="about.html" data-key="navContact">Contact</a></li>
                         <li>
                             <select id="languageSwitcherDesktop">
                                 <option value="" selected disabled>Language</option>
@@ -49,11 +48,10 @@
             </nav>
 
             <div class="mobile-nav" id="mobileMenu">
-                <a href="index.html">Home</a>
-                <!-- <a href="">Mission</a> -->
-                <a href="architecture.html">Architecture</a>
-                <a href="about.html">Contact</a>
-                <!-- <a href="#">Stories</a> -->
+                <a href="index.html" data-key="navHome">Home</a>
+                <a href="missions.html" data-key="navMissions">Missions</a>
+                <a href="architecture.html" data-key="navArchitecture">Architecture</a>
+                <a href="about.html" data-key="navContact">Contact</a>
                 <select id="languageSwitcherMobile">
                     <option value="" selected disabled>Language</option>
                     <option value="en">English</option>
@@ -74,9 +72,9 @@
             <div class="minaret-model">
                 <model-viewer class="modelviewer" src="style/models/Magoki_Kurpa_Mosque.glb" ar
                     ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces"
-                    poster="style/models/poster/Magoki_Kurpa_Mosque.webp" shadow-intensity="0" exposure="1.97"
-                    shadow-softness="1" environment-image="style/models/fada.hdr"
-                    camera-orbit="-0.3947deg 88.82deg 2.585m" field-of-view="20.91deg">
+                    poster="style/models/poster/Magoki_Kurpa_Mosque.webp" shadow-intensity="1"
+                    environment-image="style/models/poolbeg_4k.hdr" exposure="1.95"
+                    camera-orbit="-37.74deg 79.35deg 3.41m" field-of-view="26.26deg">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
@@ -85,11 +83,22 @@
                     </div>
                 </model-viewer>
 
+                <div class="photo-slider">
+                    <div class="slides">
+                        <img src="style/img_buildings/maghak-i-kurpa-mosque1.jpg" class="active"
+                            alt="Maghak-i-Kurpa Mosque 1">
+                        <img src="style/img_buildings/maghak-i-kurpa-mosque2.jpg" alt="Maghak-i-Kurpa Mosque 2">
+                    </div>
+
+                    <button class="arrow-btn left" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="arrow-btn right" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
             </div>
 
             <div class="minaret-text-box">
                 <h3 class="minaret-subtitle" data-key="kurpaoverviewtitle">Short Historical Overview</h3>
-                <p class="minaret-text"  data-key="kurpaoverviewtext">
+                <p class="minaret-text" data-key="kurpaoverviewtext">
                     Built in the 17th century, the Magok-i-Kurpa Mosque is a lesser-known gem in Bukhara, named after
                     the felt (kurpa) sellers who traded nearby. Unlike its older counterpart, Magok-i-Attari, this
                     mosque served as a neighborhood prayer house rather than a grand monument. It reflects the late
@@ -127,7 +136,8 @@
 
 
     <footer class="footer">
-        <p class="footer-quote">“Heritage is our legacy from the past, what we live with today, and what we pass on
+        <p class="footer-quote" data-key="footerQuote">“Heritage is our legacy from the past, what we live with today,
+            and what we pass on
             to future generations. Our cultural and natural heritage are both irreplaceable sources of life
             and inspiration.” - UNESCO (World Heritage)</p>
 
@@ -135,7 +145,8 @@
             <div class="footer-right">
                 <div class="footer-icons">
                     <a href="index.html"><img class="footer-logo" src="style/img/logo.png" alt="Logo" /></a>
-                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin" src="style/img/Linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/kohna-meros/posts/"><img class="footer-linkedin"
+                            src="style/img/Linkedin.png" alt="LinkedIn" /></a>
                 </div>
                 <div class="footer-copy">
                     © 2025 <span>Kohna Meros</span>

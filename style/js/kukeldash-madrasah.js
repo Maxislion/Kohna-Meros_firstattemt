@@ -11,7 +11,12 @@ const translations = {
     structuralTitle: "Structural Insights",
     structuralTextKukeldash: "Kukeldash is a two-story building that includes 130 hujras (private cells) which used to house more than 320 students. As it is typical for medieval Oriental madrasahs, Kukeldash is rectangular in layout and features a grand entrance with a welcoming arch vividly designed with glazed mosaic. In the corners, the edifice was reinforced by minaret-like towers, yielding to its solidity.",
     legendsTitle: "Fun Fact",
-    legendsTextKukeldash: "Locals used to believe that a pistachio tree, taking its roots in one of the domes of madrasah, held mysterious features, protecting the madrasah."
+    legendsTextKukeldash: "Locals used to believe that a pistachio tree, taking its roots in one of the domes of madrasah, held mysterious features, protecting the madrasah.",
+    navHome: "Home",
+    navMissions: "Missions",
+    navArchitecture: "Architecture",
+    navContact: "Contact",
+    footerQuote: "“Heritage is our legacy from the past, what we live with today, and what we pass on to future generations. Our cultural and natural heritage are both irreplaceable sources of life and inspiration.” - UNESCO (World Heritage)"
   },
   uz: {
     kukeldashTitle: "Ko‘kaldosh Madrasasi",
@@ -20,7 +25,12 @@ const translations = {
     structuralTitle: "Tuzilish Tafsilotlari",
     structuralTextKukeldash: "Koʻkaldosh ikki qavatli bino boʻlib, 130 ta hujrani (xususiy hujralarni) oʻz ichiga oladi. Bu binoda avvallari 320 dan ortiq talabalar istiqomat qilgan. Oʻrta asr Sharq madrasalariga xos boʻlgan Koʻkaldosh toʻrtburchak shaklida boʻlib, yaltiroq mozaika bilan jonli tarzda ishlangan mehmondoʻst arkli ulkan kirish eshigiga ega. Imorat burchaklarida minorasimon minoralar bilan mustahkamlanib, mustahkamligini ta’minlagan.",
     legendsTitle: "Qiziqarli Fakt",
-    legendsTextKukeldash: "Mahalliy aholi madrasa gumbazlaridan birida ildiz otgan pista daraxti madrasani himoya qilib, sirli xususiyatga ega ekanligiga ishonishgan."
+    legendsTextKukeldash: "Mahalliy aholi madrasa gumbazlaridan birida ildiz otgan pista daraxti madrasani himoya qilib, sirli xususiyatga ega ekanligiga ishonishgan.",
+    navHome: "Bosh sahifa",
+    navMissions: "Maqsadlarimiz",
+    navArchitecture: "Arxitektura",
+    navContact: "Aloqa",
+    footerQuote: "“Meros — bu o‘tmishdan qolgan, bugun biz bilan yashayotgan, va kelajak avlodlarga qoldiradigan boyligimizdir. Bizning madaniy va tabiiy merosimiz hayot va ilhomning almashtirib bo‘lmaydigan manbalaridir.” - UNESCO (Butunjahon merosi)"
   }
 };
 
@@ -42,9 +52,29 @@ document.addEventListener("DOMContentLoaded", () => {
       sw.addEventListener("change", e => {
         setLanguage(e.target.value);
         switchers.forEach(other => {
-          if (other && other !== sw) other.value = e.target.value; 
+          if (other && other !== sw) other.value = e.target.value;
         });
       });
     }
   });
 });
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slides img");
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) slide.classList.add("active");
+  });
+}
+
+function moveSlide(step) {
+  currentSlide = (currentSlide + step + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Auto-slide every 5s
+setInterval(() => {
+  moveSlide(1);
+}, 3000);

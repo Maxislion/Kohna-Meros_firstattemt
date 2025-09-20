@@ -14,7 +14,12 @@ const translations = {
     structuralinsightstext: "Though made of baked bricks as it is common for medieval oriental buildings in the region, the madrasah is more improvised than other edifices of that time. To be more specific, the courtyard seems to be wider and welcoming and student private cells welcoming compared to other madrasas — the result of a shift in purpose of the building. Another astonishing feature of the Nadir Divan-Begi madrasah is the entrance’s arch that is ornamented by an image of a line chasing a deer, quite an unusual art form for an Islamic edifice.",
 
     facttitle: "Fun Fact",
-    facttext: "“This is a marvelous madrasah” claimed Quli Khan after seeing the grand entrance to the building. Scared of upsetting the ruler, Nadir Divan-Begi repurposed the building in one single night, adding prayers and slightly changing the layout."
+    facttext: "“This is a marvelous madrasah” claimed Quli Khan after seeing the grand entrance to the building. Scared of upsetting the ruler, Nadir Divan-Begi repurposed the building in one single night, adding prayers and slightly changing the layout.",
+        navHome: "Home",
+        navMissions: "Missions",
+        navArchitecture: "Architecture",
+        navContact: "Contact",
+        footerQuote: "“Heritage is our legacy from the past, what we live with today, and what we pass on to future generations. Our cultural and natural heritage are both irreplaceable sources of life and inspiration.” - UNESCO (World Heritage)"
   },
 
   uz: {
@@ -27,7 +32,12 @@ const translations = {
     structuralinsightstext: "Mintaqadagi o'rta asr sharq binolari uchun odatiy hol bo'lgani uchun pishiq g'ishtdan qurilgan bo'lsa-da, madrasa o'sha davrdagi boshqa binolarga qaraganda ko'proq qo'lbola qilingan. Aniqroq aytadigan bo'lsak, hovli boshqa madrasalarga qaraganda kengroq va mehmondo'st, talabalar uchun esa mehmondo'st bo'lib ko'rinadi - bu binoning maqsadi o'zgarishi natijasidir. Qayta ishga tushirilganda, qurilishga yangi ehtiyojlarni qondirish uchun ikkinchi qavat, burchakli minoralar va talabalar kameralari qo'shildi. Nodir Divon-Begi madrasasining yana bir hayratlanarli jihati bu kiyik quvib kelayotgan chiziq tasviri bilan bezatilgan kirish arkidir, bu islomiy bino uchun noodatiy sanʼat turidir.",
 
     facttitle: "Qiziqarli Fakt",
-    facttext: "“Bu ajoyib madrasa”, deb da'vo qildi Qulixon binoga kirish eshigini ko'rgach. Nodir devon-begi hukmdorni xafa qilishdan qo‘rqib, bir kechada binoning maqsadini o‘zgartirib, duolar qo‘shib, tartibini biroz o‘zgartirdi."
+    facttext: "“Bu ajoyib madrasa”, deb da'vo qildi Qulixon binoga kirish eshigini ko'rgach. Nodir devon-begi hukmdorni xafa qilishdan qo‘rqib, bir kechada binoning maqsadini o‘zgartirib, duolar qo‘shib, tartibini biroz o‘zgartirdi.",
+        navHome: "Bosh sahifa",
+        navMissions: "Maqsadlarimiz",
+        navArchitecture: "Arxitektura",
+        navContact: "Aloqa",
+        footerQuote: "“Meros — bu o‘tmishdan qolgan, bugun biz bilan yashayotgan, va kelajak avlodlarga qoldiradigan boyligimizdir. Bizning madaniy va tabiiy merosimiz hayot va ilhomning almashtirib bo‘lmaydigan manbalaridir.” - UNESCO (Butunjahon merosi)"
   }
 };
 
@@ -56,3 +66,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slides img");
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) slide.classList.add("active");
+  });
+}
+
+function moveSlide(step) {
+  currentSlide = (currentSlide + step + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Auto-slide every 5s
+setInterval(() => {
+  moveSlide(1);
+}, 3000);
